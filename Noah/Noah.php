@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php include 'Assets/Navigatie.php';?>
+<?php include '../Assets/Navigatie.php';?>
     
 <?php
 echo date("d-m-Y");

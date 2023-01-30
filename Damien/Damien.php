@@ -10,7 +10,7 @@
 </head>
 <body style="background-color:green;">
 
-<?php include 'Assets/Navigatie.php';?>
+<?php include '../Assets/Navigatie.php';?>
     
 </body>
 </html>x
