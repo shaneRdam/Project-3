@@ -16,10 +16,11 @@
         <a href="Shane.html">Shane</a>
     </nav>
     
-    <h1>
 <?php
-echo date("Y-m-d");
+echo date("d-m-Y");
+echo ("<br><br>");
+echo date("h-i-s");
 ?>
-</h1>
+
 </body>
 </html>
