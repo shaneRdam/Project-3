@@ -13,10 +13,10 @@
     <nav>
         <a href="Index.html">Home</a>
         <br>
-        <a href="Noah.html">Noah</a>
-        <a href="Damien.html">Damien</a>
-        <a href="Wiktor.html">Wiktor</a>
-        <a href="Shane.html">Shane</a>
+        <a href="Noah/Noah.php">Noah</a>
+        <a href="Damien/Damien.html">Damien</a>
+        <a href="Wiktor/Wiktor.html">Wiktor</a>
+        <a href="Shane/Shane.html">Shane</a>
     </nav>
     
 </body>
