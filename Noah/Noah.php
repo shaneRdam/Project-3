@@ -7,14 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <a href="Index.html">Home</a>
-        <br>
-        <a href="Noah.html">Noah</a>
-        <a href="Damien.html">Damien</a>
-        <a href="Wiktor.html">Wiktor</a>
-        <a href="Shane.html">Shane</a>
-    </nav>
+<?php include 'Assets/Navigatie.php';?>
     
 <?php
 echo date("d-m-Y");
