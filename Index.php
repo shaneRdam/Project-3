@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
+<script src="/Project-3/App.js"></script>
+
 <?php include '../Project-3/Assets/Navigatie.php';?>
 <div class="Maintext">
 
@@ -54,7 +56,16 @@
 
         <section>
             <h2>Veelgestelde vragen</h2>
+            <br>
+
+            <button type="button" class="collapsible">Open Collapsible</button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
+
         </section>
+        
+        <br><br>
         </div>
 
 
