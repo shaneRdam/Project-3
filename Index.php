@@ -10,21 +10,18 @@
 <body>
 
 <?php include '../Project-3/Assets/Navigatie.php';?>
-<div class="Maintext">
 
     <main>
-        <h1>Home</h1>
-        <p>
+        <h1>
         Niet je standaard waterfles.
-        </p>
-
+</h1>
+</main>
+<div class="Maintext">
         <section>
             <h2>
                 Ontdek nieuwe producten
             </h2>
         </section>
-    </main>
-
     <section>
             <h2>
                 Hoe werkt het?
