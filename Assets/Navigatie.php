@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/Project-3/Assets/StyleSheet.css">
+        <link rel="stylesheet" href="/Project-3/Assets/StyleSheetNavigatie.css">
     </head>
     <header>
         <h1>Pods up</h1>
