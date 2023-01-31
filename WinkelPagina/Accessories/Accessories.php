@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php include '../Assets/Navigatie.php';?>
+<?php include '../Project-3/Assets/Navigatie.php';?>
 <div class="Maintext">
 
 
@@ -16,6 +16,6 @@
         </div>
 
 
-        <?php include '../Assets/Footer.php';?>
+        <?php include '../Project-3/Assets/Footer.php';?>
 </body>
 </html>
