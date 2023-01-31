@@ -18,6 +18,14 @@
         <a href="Wiktor/Wiktor.html">Wiktor</a>
         <a href="Shane/Shane.html">Shane</a>
     </nav>
-    
+
+    <form action="/action_page.php">
+  <label for="naam">Naam:</label>
+  <input type="email" id="naam" name="naam"><br><br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+  <input type="submit">
+ </form>
+
 </body>
-</html>x
+</html>
