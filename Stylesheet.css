@@ -3,102 +3,24 @@
 }
 
 /*Collapsible van homepagina*/
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+  background-color: rgb(255, 255, 255);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-bottom: black 0 solid;
+  border-bottom-width: 0.2vw;
+}
 
-  .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-
-  .active {
-    overflow:visible;
-    display: block; 
-  }
-
-  /**/
-  .container {
-    max-width: 960px;
-  }
-  
-  
-  /* */
-  
-  .panel-default>.panel-heading {
-    color: #333;
-    background-color: #fff;
-    border-color: #e4e5e7;
-    padding: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .panel-default>.panel-heading a {
-    display: block;
-    padding: 10px 15px;
-  }
-  
-  .panel-default>.panel-heading a:after {
-    content: "";
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    float: right;
-    transition: transform .25s linear;
-    -webkit-transition: -webkit-transform .25s linear;
-  }
-  
-  .panel-default>.panel-heading a[aria-expanded="true"] {
-    background-color: #eee;
-  }
-  
-  .panel-default>.panel-heading a[aria-expanded="true"]:after {
-    content: "\2212";
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-  
-  .panel-default>.panel-heading a[aria-expanded="false"]:after {
-    content: "\002b";
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
