@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project-3/Stylesheet.css">
     <title>Document</title>
 </head>
 <body>
-<?php include '../Assets/Navigatie.php';?>
-   
+<?php include 'Project-3/Assets/Navigatie.php';?>
+<div class="Maintext">
 
-<?php include 'Assets/Footer.php';?>
+
+
+        </div>
+
+
+        <?php include 'Project-3/Assets/Footer.php';?>
 </body>
 </html>

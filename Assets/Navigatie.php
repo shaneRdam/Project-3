@@ -11,9 +11,9 @@
     </header>
 <nav>
         <a href="/Project-3/Index.php">Home</a>
-        <a href="/Project-3/Noah/Noah.php">Noah</a>
-        <a href="/Project-3/Damien/Damien.php">Damien</a>
-        <a href="/Project-3/Wiktor/Wiktor.php">Wiktor</a>
+        <a href="/Project-3/Flessen/Flessen.php">Flessen</a>
+        <a href="/Project-3/Pods/Pods.php">Pods</a>
+        <a href="/Project-3/Accessories/Accessories.php">Accessories</a>
         <a href="/Project-3/Shane/Shane.php">Shane</a>
     </nav>
 

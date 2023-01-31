@@ -41,4 +41,5 @@ nav a:hover {
 .FooterUl a:hover {
     color: grey;
     text-decoration: underline;
+    cursor: pointer;
 }
