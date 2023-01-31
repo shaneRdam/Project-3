@@ -10,7 +10,7 @@
 
 <form action="action_page.php" method="post">
   <label for="fname">Username:</label><br>
-  <input type="email" id="fname" name="uname" placeholder="First.Last@email.com" value=""><br>
+  <input type="email" id="fname" name="uname" placeholder="Firstname.Lastname@email.com" value=""><br>
   <label for="lname">Password:</label><br>
   <input type="password" id="myInput" name="password" placeholder="Password" value="Doe">
   <input type="checkbox" onclick="TogglePassword()">Show Password
