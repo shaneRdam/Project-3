@@ -12,3 +12,13 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+function ActiveToggle() {
+    this.classList.toggle("active");
+    if(this.classList.contains("active")) {
+        alert("active")
+    }
+    else{
+        alert("Not active")
+    }
+}

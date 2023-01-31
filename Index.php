@@ -58,13 +58,13 @@
             <h2>Veelgestelde vragen</h2>
             <br>
 
-            <button type="button" class="collapsible">Open Collapsible</button>
+            <button type="button" class="collapsible" onclick="ActiveToggle()">Open Collapsible</button>
             <div class="content">
                 <p>Lorem ipsum...</p>
             </div>
 
         </section>
-        
+
         <br><br>
         </div>
 
