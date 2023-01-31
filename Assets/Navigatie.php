@@ -5,7 +5,7 @@
     <header>
         <h1>Pods up</h1>
         <div class="HeaderDiv">
-            <a href="/Project-3/Account/LogIn.html">Account</a>
+            <a href="/Project-3/Account/LogIn.php">Account</a>
             <a>Winkelwagen</a>
         </div>
     </header>
