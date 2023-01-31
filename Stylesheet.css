@@ -47,12 +47,20 @@ main {
   text-align: center;
 }
 
+.ShuffleButton {
+  margin-bottom: 3vw;
+}
+
+.OntdekLiAnimate {
+  animation: ShuffleLi 1s;
+}
+
 @keyframes ShuffleLi {
-  0% {
+  from {
     opacity: 0;
-    transform: translateY(5);
+    transform: translateX(50);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }

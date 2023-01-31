@@ -20,22 +20,23 @@
             <h2>
                 Ontdek nieuwe producten
             </h2>
-            <button onclick="Shuffle()">
+            <button class="ShuffleButton" onclick="Shuffle()">
               Shuffle
             </button>
             <div class="OntdekProducten">
-              <li id="OntdekLi">
+              <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
 
               </li>
-              <li id="OntdekLi">
+              <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
 
               </li>
-              <li id="OntdekLi">
+              <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
 
               </li>
 
             </div>
         </section>
+        <br><br>
     <section>
             <h2>
                 Hoe werkt het?
@@ -82,6 +83,7 @@
             </section>
         </section>
 
+        <br><br>
         <section>
             <h2>Veelgestelde vragen</h2>
             <br>

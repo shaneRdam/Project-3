@@ -2,8 +2,7 @@
 <html>
 <body>
 <script src="../Account/App.js"></script>
-<h2>HTML Forms</h2>
-<?php include '../Project-3/Assets/Navigatie.php';?>
+<?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
 <div class="Maintext">
 
 <br><br><br>
@@ -22,6 +21,6 @@
 </div>
 
 
-<?php include '../Project-3/Assets/Footer.php';?>
+<?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
 </body>
 </html>
