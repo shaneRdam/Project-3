@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<script src="../Account/App.js"></script>
 <h2>HTML Forms</h2>
 
-<form action="../Project-3/Account/action_page.php">
+<form action="../Account/action_page.php">
   <label for="fname">Username:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Password:</label><br>
-  <input type="password" id="lname" name="lname" value="Doe"><br><br>
+  <input type="password" id="myInput" name="lname" value="Doe">
+  <input type="checkbox" onclick="TogglePassword()">Show Password
+  <br><br>
   <input type="submit" value="Submit">
 </form> 
+
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
