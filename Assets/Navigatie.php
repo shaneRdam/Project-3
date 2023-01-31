@@ -4,10 +4,13 @@
     </head>
     <header>
         <h1>Pods up</h1>
+        <div class="HeaderDiv">
+            <a>Account</a>
+            <a>Winkelwagen</a>
+        </div>
     </header>
 <nav>
         <a href="/Project-3/Index.php">Home</a>
-        <br>
         <a href="/Project-3/Noah/Noah.php">Noah</a>
         <a href="/Project-3/Damien/Damien.php">Damien</a>
         <a href="/Project-3/Wiktor/Wiktor.php">Wiktor</a>
