@@ -11,6 +11,7 @@ nav {
     align-items: center;
     margin: 0 30vw;
     height: 7vh;
+    z-index: 1;
 }
 
 nav a {

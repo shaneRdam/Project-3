@@ -11,8 +11,11 @@
     </header>
 <nav>
         <a href="/Project-3/Index.php">Home</a>
+        <div>|</div>
         <a href="/Project-3/WinkelPagina/Flessen/Flessen.php">Flessen</a>
+        <div>|</div>
         <a href="/Project-3/WinkelPagina/Pods/Pods.php">Pods</a>
+        <div>|</div>
         <a href="/Project-3/WinkelPagina/Accessories/Accessories.php">Accessories</a>
     </nav>
 

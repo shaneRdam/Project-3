@@ -12,3 +12,8 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+function Shuffle() {
+  alert("wfa");
+  document.getElementById('OntdekLi').style.animation = "ShuffleLi 2s 2s forward";
+}

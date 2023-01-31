@@ -2,6 +2,62 @@
     margin: 0 9vw;
 }
 
+main {
+  top: 0;
+  left: 0;
+  /*background: linear-gradient(
+    to right,
+    purple 0%,
+    purple 35%,
+    rgba(175, 238, 238, 0) 35%,
+    rgba(175, 238, 238, 0) 100%
+  );*/
+  min-height: 45vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  z-index: 0;
+}
+
+.StappenImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.StappenImages div {
+  width: 25vw;
+  height: 25vw;
+  background-color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+.OntdekProducten {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.OntdekProducten li {
+  list-style: none;
+  width: 20vw;
+  height: 25vw;
+  background-color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+@keyframes ShuffleLi {
+  0% {
+    opacity: 0;
+    transform: translateY(5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*Collapsible van homepagina*/
 .collapsible {
   background-color: rgb(255, 255, 255);

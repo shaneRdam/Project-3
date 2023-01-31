@@ -8,7 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-
 <?php include '../Project-3/Assets/Navigatie.php';?>
 
     <main>
@@ -21,15 +20,48 @@
             <h2>
                 Ontdek nieuwe producten
             </h2>
+            <button onclick="Shuffle()">
+              Shuffle
+            </button>
+            <div class="OntdekProducten">
+              <li id="OntdekLi">
+
+              </li>
+              <li id="OntdekLi">
+
+              </li>
+              <li id="OntdekLi">
+
+              </li>
+
+            </div>
         </section>
     <section>
             <h2>
                 Hoe werkt het?
             </h2>
-            <section>
+            <section class="StappenImages">
+              <div>
+                <h3>
+                  Stap 1: Vul de fles
+                </h3>
+                
+              </div>
+              <div>
+                <h3>
+                  Stap 2: Activeer je geur pod
+                </h3>
 
+              </div>
+              <div>
+                <h3>
+                  Stap 3: Geniet!
+                </h3>
+
+              </div>
             </section>
 
+            <br><br>
             <h2>
                 Retronasaal: de wetenschap achter de geur
             </h2>
