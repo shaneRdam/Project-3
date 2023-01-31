@@ -56,5 +56,8 @@
             <h2>Veelgestelde vragen</h2>
         </section>
         </div>
+
+
+        <?php include 'Assets/Footer.php';?>
 </body>
 </html>

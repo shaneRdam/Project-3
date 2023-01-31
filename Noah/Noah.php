@@ -15,5 +15,7 @@ echo ("<br><br>");
 echo date("h-i-s");
 ?>
 
+
+<?php include 'Assets/Footer.php';?>
 </body>
 </html>

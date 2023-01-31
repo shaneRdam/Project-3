@@ -11,6 +11,8 @@
 <body style="background-color:green;">
 
 <?php include '../Assets/Navigatie.php';?>
-    
+  
+
+<?php include 'Assets/Footer.php';?>
 </body>
-</html>x
+</html>

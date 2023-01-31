@@ -8,6 +8,8 @@
 </head>
 <body>
 <?php include '../Assets/Navigatie.php';?>
-    
+   
+
+<?php include 'Assets/Footer.php';?>
 </body>
 </html>
