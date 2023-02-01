@@ -6,7 +6,7 @@
     <header>
         <h1>Pods up</h1>
         <div class="HeaderDiv">
-            <a href="/Project-3/Account/LogIn.php"><i class="fa fa-user Fa-Icon" style="font-size:2.5vw"></i></a>
+            <a href="/Project-3/Account/LogIn.php"><i class="fa fa-user-circle Fa-Icon" style="font-size:2.5vw"></i></a>
             <a><li class="fa fa-shopping-cart Fa-Icon" style="font-size:2.5vw"></li></a>
         </div>
     </header>
