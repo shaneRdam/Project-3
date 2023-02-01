@@ -16,6 +16,7 @@
   <br><br>
   <input type="submit" value="Submit">
 </form> 
+<h2 id="text">Warning: Caps lock is on!</h2>
 <br><br>
 
 </div>
