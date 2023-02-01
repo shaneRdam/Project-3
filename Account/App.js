@@ -7,14 +7,17 @@ function TogglePassword() {
     }
   }
 
-  var text = document.getElementById("text");
-  text.style.display = "none";
+  var input = document.getElementsByClassName("InputCapslock");
+  var text = document.getElementById("TextCapsLock");
+  document.getElementById("TextCapsLock").style.display = "none";
 
-  input.addEventListener("keyup", function(event) {
+  for (i = 0 ; i < input.length; i++) {
+  input[i].addEventListener("keyup", function(e) {
     // If "caps lock" is pressed, display the warning text
-    if (event.getModifierState("CapsLock")) {
+    if (e.getModifierState("CapsLock")) {
       text.style.display = "block";
     } else {
       text.style.display = "none";
     }
   });
+}
