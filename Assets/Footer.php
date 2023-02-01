@@ -3,14 +3,14 @@
         <link rel="stylesheet" href="/Project-3/Assets/StyleSheetNavigatie.css">
     </head>
     <footer>
-        <div class="FooterLinearGradient">
-            <div>
+        <div class="FooterFlexbox">
+            <div class="FooterLinearGradientWhite">
         <ul>
             <a href="/Project-3/Gezondheid/Duurzaamheid.php">Duurzaamheid</a>
             <a href="/Project-3/Gezondheid/Gezondheid.php">Gezondheid</a>
         </ul>
         </div>
-        <div>
+        <div class="FooterLinearGradientPurple">
 
         </div>
         

@@ -108,9 +108,9 @@ main {
 
 .FooterLinearGradientWhite {
   background: linear-gradient(
-    -3deg,
-    rgb(172, 172, 172) 0%,
-    rgb(172, 172, 172) 55%,
+    -1.5deg,
+    rgb(227, 227, 227) 0%,
+    rgb(227, 227, 227) 55%,
     rgba(175, 238, 238, 0) 55%,
     rgba(175, 238, 238, 0) 100%
   );
