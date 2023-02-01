@@ -14,9 +14,10 @@ for (i = 0; i < coll.length; i++) {
 }
 
 function Shuffle() {
-  let ShuffleLi = document.getElementsByName('OntdekLi');
-  for (let i = 0; i < ShuffleLi.length; i++) {
-    ShuffleLi[i].classList.remove('OntdekLiAnimate');
-    ShuffleLi[i].classList.add('OntdekLiAnimate');
+  let ShuffleLi = document.getElementsByName("OntdekLi");
+  for (i = 0; i < ShuffleLi.length; i++) {
+    console.log(i + "Shuffle");
+    ShuffleLi[i].classList.remove("OntdekLiAnimate");
+    ShuffleLi[i].classList.add("OntdekLiAnimate");
   }
 }
