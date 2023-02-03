@@ -163,28 +163,33 @@
             </td>
             <td>
                 <a>
-
+                Drink ik echt alleen water?
                 </a>
                 <p>
-
+                Ja, je drinkt echt 99.99% zuiver water.Natuurlijk waren we daar zelf ook nieuwsgierig naar. 
+                Daarom hebben we al in 2017 een onderzoek uit laten voeren door het ...
                 </p>
             </td>
         </tr>
         <tr>
             <td>
                 <a>
-
+                Als ik een slok neem, komt er lucht mee en hoor ik een geluid. 
+                Is dat normaal?
                 </a>
                 <p>
-
+                Dit is heel normaal.
+                 De luchtbelletjes die je ziet, zijn de "geurzenders" waardoor je de geur proeft. 
+                 Bij het drinken slik je ze echter niet in, maar a...
                 </p>
             </td>
             <td>
                 <a>
-
+                Waar is mijn air up bestelling?
                 </a>
                 <p>
-
+                Zodra je bestelling ons magazijn heeft verlaten, ontvang je een verzendbevestiging per e-mail. 
+                In dit bericht vind je ook informatie over welke vervoerder je pa...
                 </p>
             </td>
         </tr>
