@@ -19,6 +19,10 @@ main {
   z-index: 0;
 }
 
+main h1 {
+  font-size: 3vw;
+}
+
 .StappenImages {
   display: flex;
   flex-direction: row;
@@ -169,6 +173,14 @@ main {
 
 .VeelgesteldeVragenH1 {
   text-align: center;
+}
+
+.OrangeButton {
+  background-color: orange;
+  border-radius: 0.2vw;
+  border-color: orange;
+  border-width: 0.2vw;
+  border-style: solid;
 }
 
 /*Collapsible van homepagina*/
