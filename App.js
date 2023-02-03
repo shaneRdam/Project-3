@@ -19,5 +19,13 @@ function Shuffle() {
     console.log(i + "Shuffle");
     ShuffleLi[i].classList.remove("OntdekLiAnimate");
     ShuffleLi[i].classList.add("OntdekLiAnimate");
+    ShuffleLi[i].style.animation = 'none';
+
+    // trigger reflow
+    console.log(ShuffleLi[i].offsetWidth);
+    console.log(ShuffleLi[i].offsetHeight);
+  
+    // add animation again
+    ShuffleLi[i].style.animation = 'ShuffleLiAnim 2s';
+  };
   }
-}

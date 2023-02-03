@@ -123,6 +123,10 @@ main {
   background-color: purple;
 }
 
+.VeelgesteldeVragenTable {
+  display: flex;
+}
+
 /*Collapsible van homepagina*/
 .collapsible {
   background-color: rgb(255, 255, 255);
