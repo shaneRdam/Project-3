@@ -125,6 +125,29 @@ main {
 
 .VeelgesteldeVragenTable {
   display: flex;
+  justify-content: center;
+}
+
+.VeelgesteldeVragenTable tr td div  {
+  background-color: whitesmoke;
+  width: 15vw;
+  height: 10vw;
+  margin: 1vw;
+  padding: 0;
+  text-align: center;
+  transition: 0.5s;
+  border-radius: 1.4vw;
+}
+
+.VeelgesteldeVragenTable tr td div:hover  {
+  color: blue;
+  padding: 1vw;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.VeelgesteldeVragenH1 {
+  text-align: center;
 }
 
 /*Collapsible van homepagina*/

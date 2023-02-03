@@ -15,7 +15,8 @@
 
 </section>
 <section>
-    <table>
+    <h1>Kies u onderwerp</h1>
+    <table class="VeelgesteldeVragenTable">
         <tr>
             <td>
                 <div>
