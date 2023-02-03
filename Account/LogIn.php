@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <head>
+  <link rel="stylesheet" href="/Project-3/MainStylesheet.css">
+  </head>
 <body>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
 <div class="Maintext">

@@ -1,6 +1,7 @@
 <html>
 <head>
         <link rel="stylesheet" href="/Project-3/Assets/StyleSheetNavigatie.css">
+        <link rel="stylesheet" href="/Project-3/MainStylesheet.css">
     </head>
     <footer>
         <div class="FooterFlexbox">
