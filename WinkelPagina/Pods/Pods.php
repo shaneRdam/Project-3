@@ -12,6 +12,195 @@
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
 <div class="Maintext">
 
+<table class="FlessenTable">
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+        <td>
+            <li>
+                
+            </li>
+        </td>
+    </tr>
+</table>
 
 
         </div>
