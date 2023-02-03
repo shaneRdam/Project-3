@@ -10,12 +10,20 @@
 </head>
 <body>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
-<div class="Maintext">
-<section>
 
+<section class="VGVpurple">
+    <div>
+    <h1>
+    Hallo! Hoe kunnen wij je helpen?
+    </h1>
+    <input type="text" placeholder="Voer hier u zoek term in">
+    </div>
 </section>
+
+<div class="Maintext">
+
 <section>
-    <h1>Kies u onderwerp</h1>
+    <h1 class="VeelgesteldeVragenH1">Kies u onderwerp</h1>
     <table class="VeelgesteldeVragenTable">
         <tr>
             <td>
@@ -96,9 +104,92 @@
             </td>
         </tr>
     </table>
-
 </section>
 
+<section>
+    <h1>FAQs</h1>
+    <table>
+        <tr>
+            <td>
+                <a>
+                De eerste fles? Laten we beginnen!
+                </a>
+                <p>
+                We laten je zien hoe je de fles het beste kunt gebruiken. 
+                Controleer eerst of alles items in de startset zitten. Normaal gesproken zou je het vol...
+                </p>
+            </td>
+            <td>
+                <a>
+                Hoe lang werkt een pod?
+                </a>
+                <p>
+                Eén pod geeft smaak aan tenminste 5 liter water!
+                 Omdat onze smaken uit echte vruchten, planten en kruiden gehaald worden, zijn ze jammer genoeg niet onein...
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>
+                Mijn fles lekt - hoe kan dat?
+                </a>
+                <p>
+                Waarschijnlijk heb je de dop niet goed vastgedraaid.
+                 De fles verliest dan een beetje water als je hem omkiept. 
+                 Dit komt door het ingebouwde ontluchtingsventiel. ...
+                </p>
+            </td>
+            <td>
+                <a>
+                Mijn pod is geactiveerd maar ik proef niets. Hoe kan dit?
+                </a>
+                <p>
+                Dit kan een paar oorzaken hebben. Loop eerst de volgende stappen door:
+                 1. Controleer of je je fles in elkaar hebt gezet zoals op deze video te zien is. 2. I...
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>
+                Hoe maak ik de fles schoon?
+                </a>
+                <p>
+                Met de hand, en met lauw water.
+                 Bij het ontwerpen van onze producten vonden we het heel belangrijk dat je er lang van kunt genieten. 
+                 Dit kan natuurlijk alleen al...
+                </p>
+            </td>
+            <td>
+                <a>
+
+                </a>
+                <p>
+
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>
+
+                </a>
+                <p>
+
+                </p>
+            </td>
+            <td>
+                <a>
+
+                </a>
+                <p>
+
+                </p>
+            </td>
+        </tr>
+    </table>
+</section>
         </div>
 
 

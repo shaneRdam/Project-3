@@ -18,6 +18,10 @@ main {
     );
 }
 
+.VGVpurple {
+  background-color: var(--Maincolor);
+}
+
 .FooterLinearGradientPurple {
     background: linear-gradient(
       -3deg,
