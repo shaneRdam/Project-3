@@ -14,6 +14,6 @@
 
 
 </div>
-        <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
+        <?php include '/Xampp/htdocs/Project-3/Assets/ContactFooter.php';?>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+<?php include '/Xampp/htdocs/Project-3/Assets/ContactHeader.php';?>
 <div class="Maintext">
 
 

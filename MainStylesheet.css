@@ -1,6 +1,6 @@
 /*Deze Stylesheet bepaalt de basis kleuren van de alle websites met variabelen*/
 :root {
-    --TextSize: vw;
+    --TextSize: 1vw;
     --Maincolor: purple;
 }
 

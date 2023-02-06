@@ -51,5 +51,12 @@ footer {
 }
 
 .ContactFooter {
-    tex
+    width: 100%;
+    text-align: center;
+    background-color: rgb(215, 215, 215);
+    padding: 4vw 0;
+}
+
+body, html {
+    background-color: black;
 }
