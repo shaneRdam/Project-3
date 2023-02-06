@@ -12,27 +12,38 @@
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
 <div class="Maintext">
 
-<form class="ContactForm">
+<div class="ContactForm">
+<form action="ContactInfoSubmit.php" method="post">
     <h1>Contact formulier</h1>
     <p>
         Voornaam Achternaam
     </p>
-    <input type="text" placeholder="John doe"><br><br>
+    <input name="Naam" type="text" placeholder="John doe"><br><br>
 
     <p>
-        E-mailadres
+        E-mailadres*
     </p>
-    <input type="email" placeholder="Jouw email" required><br><br>
+    <input name="Email" type="email" placeholder="Jouw email" required><br><br>
 
     <p>
         Land
     </p>
     <select name="Land" id="Land">
     <option value=""></option>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
+    <option value="Australië">Australië</option>
+    <option value="Oostenrijk">Oostenrijk</option>
+    <option value="België">België</option>
+    <option value="Canada">Canada</option>
+    <option value="Frankrijk">Frankrijk</option>
+    <option value="Duitsland">Duitsland</option>
+    <option value="Italië">Italië</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Nederland">Nederland</option>
+    <option value="Zweden">Zweden</option>
+    <option value="Schweiz">Schweiz</option>
+    <option value="Verenigd-Koninkrijk">Verenigd Koninkrijk</option>
+    <option value="Verenigde-Staten-van-Amerika">Verenigde Staten van Amerika</option>
+    <option value="Anders">Anders</option>
   </select><br><br>
 
   <p>
@@ -50,34 +61,40 @@
   </p>
   <select name="Helpen" id="Helpen">
     <option value=""></option>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
+    <option value="Waar-is-mijn-bestelling?">Waar is mijn bestelling?</option>
+    <option value="Aanpassen-of-annuleren-van-mijn-bestelling">Aanpassen of annuleren van mijn bestelling</option>
+    <option value="Product beschikbaarheid">Product-beschikbaarheid</option>
+    <option value="Ik-heb-geen-smaak">Ik heb geen smaak</option>
+    <option value="Mijn-fles-lekt">Mijn fles lekt</option>
+    <option value="Verkeerde-items-ontvangen">Verkeerde items ontvangen</option>
+    <option value="Start-een-retourzending">Start een retourzending</option>
+    <option value="B2B-vragen">B2B vragen</option>
+    <option value="Anders">Anders</option>
   </select><br><br>
 
   <p>
     Bestellingsnummer
   </p>
-    <input type="text" placeholder="#NL-123456"><br><br>
+    <input name="Bestellingsnummer" type="text" placeholder="#NL-123456"><br><br>
 
     <p>
-        Onderwerp
+        Onderwerp*
     </p>
-    <input type="text" required><br><br>
+    <input name="Onderwerp" type="text" required><br><br>
 
     <p>
-        Beschrijving
+        Beschrijving*
     </p>
-    <input type="textarea" required><br><br>
+    <textarea name="Beschrijving" required></textarea><br><br>
 
     <p>
         Screenshots (optioneel)
     </p>
-    <input type="file" id="img" name="img" accept="image/*"><br><br>
+    <input type="file" id="img" name="img" accept="image/*" multiple><br><br>
 
     <input type="submit"> 
 </form>
+</div>
 
         </div>
 
