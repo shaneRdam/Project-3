@@ -9,12 +9,19 @@ $onderwerp = $_POST["Onderwerp"];
 $beschrijving = $_POST["Beschrijving"];
 
 echo "$naam <br>"; 
+
 echo "$email <br>"; 
+
 echo "$land <br>"; 
+
 echo "$verkooppunt <br>"; 
+
 echo "$helpen <br>"; 
+
 echo "$bestellingsnummer <br>"; 
+
 echo "$onderwerp <br>"; 
+
 echo "$beschrijving <br>"; 
 
 
