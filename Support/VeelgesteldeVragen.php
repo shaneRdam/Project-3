@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Project-3/Stylesheet.css">
     <link rel="stylesheet" href="/Project-3/MainStylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
     <h1>
     Hallo! Hoe kunnen wij je helpen?
     </h1>
-    <input type="text" placeholder="Voer hier u zoek term in">
+    <input type="text" id="SearchText" placeholder="Voer hier u zoek term in"><button onclick="Search()"><i class="fa fa-search"></i></button>
     </div>
 </section>
 
@@ -208,4 +209,5 @@
 
         <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
 </body>
+<script src="/Project-3/App.js"></script>
 </html>

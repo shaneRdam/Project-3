@@ -29,3 +29,12 @@ function Shuffle() {
     ShuffleLi[i].style.animation = 'ShuffleLiAnim 2s';
   };
   }
+
+  function Search() {
+    console.log("Searching")
+    let search = document.getElementById("SearchText").value;
+    let URL = "https://www.google.nl/search?q=Air up "
+    let FinalSearch = URL.concat(search)
+    console.log(FinalSearch)
+    window.open(FinalSearch)
+  }
