@@ -18,6 +18,14 @@ echo "$onderwerp <br>";
 echo "$beschrijving <br>"; 
 
 
+function LengthCheck($String) {
+    if(strlen($String) <= 0) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
 
 ?>
 

@@ -28,7 +28,7 @@
     <table class="VeelgesteldeVragenTable">
         <tr>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/De-eerste-Pods-up-fles.php'">
                     <a>
                         <img>
                         <h2>De eerste Pods up fles</h2>
@@ -36,7 +36,7 @@
                 </div>
             </td>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/Algemeen.php'">
                     <a>
                         <img>
                         <h2>Algemeen</h2>
@@ -44,7 +44,7 @@
                 </div>
             </td>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/De-Fles-en-de-Pods.php'">
                     <a>
                         <img>
                         <h2>De Fles en de Pods</h2>
@@ -54,7 +54,7 @@
         </tr>
         <tr>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/Duurzaamheid.php'">
                     <a>
                         <img>
                         <h2>Duurzaamheid</h2>
@@ -62,7 +62,7 @@
                 </div>
             </td>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/Defect-en-problemen.php'">
                     <a>
                         <img>
                         <h2>Defect en probelemen</h2>
@@ -70,17 +70,17 @@
                 </div>
             </td>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/Beschikbaarheid-en-levertijd.php'">
                     <a>
                         <img>
-                        <h2>Beschikbaarbaarheid en levertijd</h2>
+                        <h2>Beschikbaarheid en levertijd</h2>
                     </a>
                 </div>
             </td>
         </tr>
         <tr>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/Betaling.php'">
                     <a>
                         <img>
                         <h2>Betaling</h2>
@@ -88,7 +88,7 @@
                 </div>
             </td>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/Retour-en-annuleringsbeleid.php'">
                     <a>
                         <img>
                         <h2>Retour -en annuleringsbeleid</h2>
@@ -96,7 +96,7 @@
                 </div>
             </td>
             <td>
-                <div>
+                <div onClick="location.href='/Project-3/Support/SubPaginas/Abonnement.php'">
                     <a>
                         <img>
                         <h2>Abonnement</h2>

@@ -169,6 +169,7 @@ main h1 {
   padding: 1vw;
   margin: 0;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .VeelgesteldeVragenH1 {
