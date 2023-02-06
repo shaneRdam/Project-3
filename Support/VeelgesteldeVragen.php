@@ -201,7 +201,9 @@
     Staat het antwoord op je vraag er niet tussen?
     </h1>
     <button class="OrangeButton">
+        <a href="/Project-3/Contact/Contact.php">
         Neem contact op
+        </a>
     </button>
 </section>
         </div>

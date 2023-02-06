@@ -205,6 +205,11 @@ main h1 {
   border-radius: 0.2vw;
 }
 
+.ContactForm {
+  margin: 45vw;
+  background-color: whitesmoke;
+}
+
 
 /*Collapsible van homepagina*/
 .collapsible {
