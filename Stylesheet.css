@@ -1,3 +1,9 @@
+html {
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
 .Maintext {
     margin: 0 9vw;
 }

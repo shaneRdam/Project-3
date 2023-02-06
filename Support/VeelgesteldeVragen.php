@@ -209,7 +209,7 @@
         </div>
 
 
-        <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
+        <?php include '/Xampp/htdocs/Project-3/Assets/ContactFooter.php';?>
 </body>
 <script src="/Project-3/App.js"></script>
 </html>
