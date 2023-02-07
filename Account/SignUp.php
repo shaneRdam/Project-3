@@ -11,11 +11,12 @@
 
 <form action="Create_Account.php" method="post">
   <label for="fname">Username:</label><br>
-  <input type="email" id="fname" class="InputCapslock" name="uname" placeholder="Firstname.Lastname@email.com" value=""><br>
+  <input type="email" id="fname" class="InputCapslock" name="uname" placeholder="Firstname.Lastname@email.com" value=""><br><br>
   <label for="lname">Password:</label><br>
   <input type="password" id="myInput" class="InputCapslock" name="password" placeholder="Password" value="Doe">
+  <br>
   <label for="lname">Confirm password:</label><br>
-  <input type="password" id="myInput" class="InputCapslock" name="password" placeholder="Password" value="Doe">
+  <input type="password" id="myInput" class="InputCapslock" name="password2" placeholder="Password" value="Doe">
   <input type="checkbox" onclick="TogglePassword()">Show Password
   <br><br>
   <input type="submit" value="Submit">

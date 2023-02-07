@@ -29,7 +29,7 @@ $dbname = "project-3podsup";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT * FROM acounts"); 
+    $stmt = $conn->prepare("SELECT * FROM accounts"); 
     $stmt->execute();
 
     $result = $stmt->fetchAll();

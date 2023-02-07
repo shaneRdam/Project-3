@@ -33,7 +33,7 @@ if($conn->query($table_check)->num_rows == 0) {
 }
 
 // Reset auto-increment value
-$sql = "ALTER TABLE accounts AUTO_INCREMENT = 1";
+$sql = "ALTER TABLE accounts AUTO_INCREMENT = 2";
 
 if ($conn->query($sql) === TRUE) {
     echo "Auto-increment value reset successfully";
@@ -42,8 +42,8 @@ if ($conn->query($sql) === TRUE) {
 }
 
 // Assign $_POST values to variables
-$email = $_POST["Email"];
-$password = $_POST["Password"];
+$email = $_POST["uname"];
+$password = $_POST["password"];
 
 // Insert data into table
 $sql = "INSERT INTO accounts (email, password)
