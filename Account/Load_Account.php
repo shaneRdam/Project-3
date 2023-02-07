@@ -37,8 +37,8 @@ try {
     echo "<table>";
     foreach($result as $row) {
         echo "<tr>" . 
-        "<td>".$row['ID']."</td>" . " " .
-        "<td>" .$row['Email']."<td>" . " " . 
+        "<td>".$row['ID']."</td>" . 
+        "<td>" .$row['Email']."<td>" . 
         "<td>".$row['Password']."<td>" . "</tr><br>";
     }
     echo "</table>";
