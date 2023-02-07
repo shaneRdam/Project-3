@@ -1,8 +1,8 @@
 <html>
 <head>
-        <link rel="stylesheet" href="/Project-3/Assets/StyleSheetNavigatie.css">
         <link rel="stylesheet" href="/Project-3/MainStylesheet.css">
     </head>
+    <body>
     <footer>
         <div class="FooterFlexbox">
             <div class="FooterLinearGradientWhite">
@@ -36,4 +36,37 @@
         </ul>
         </div>
     </footer>
+    <style>
+        .FooterUl {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0 10vw;
+}
+
+.FooterUl a {
+    color: white;
+    color: grey;
+}
+
+.FooterUl a:hover {
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    padding-bottom: 5vh;
+    width: 100%;
+}
+
+.ContactFooter {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(215, 215, 215);
+    padding: 4vw 0;
+}
+
+    </style>
+</body>
 </html>
