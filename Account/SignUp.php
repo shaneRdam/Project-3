@@ -9,10 +9,12 @@
 
 <br><br><br>
 
-<form action="Load_Account.php" method="post">
+<form action="Create_Account.php" method="post">
   <label for="fname">Username:</label><br>
   <input type="email" id="fname" class="InputCapslock" name="uname" placeholder="Firstname.Lastname@email.com" value=""><br>
   <label for="lname">Password:</label><br>
+  <input type="password" id="myInput" class="InputCapslock" name="password" placeholder="Password" value="Doe">
+  <label for="lname">Confirm password:</label><br>
   <input type="password" id="myInput" class="InputCapslock" name="password" placeholder="Password" value="Doe">
   <input type="checkbox" onclick="TogglePassword()">Show Password
   <br><br>
@@ -20,7 +22,7 @@
 </form> 
 <p id="TextCapsLock">Warning: Caps lock is on!</p>
 <br><br>
-<a href="/Project-3/Account/SignUp.php">Create account</a>
+
 </div>
 
 <script src="../Account/App.js"></script>
