@@ -30,7 +30,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/De-eerste-Pods-up-fles.php'">
                     <a>
-                        <img>
+                        <img src="https://i.pinimg.com/originals/05/3d/be/053dbee78855ca9ad19297a20291626d.png">
                         <h2>De eerste Pods up fles</h2>
                     </a>
                 </div>
@@ -38,7 +38,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/Algemeen.php'">
                     <a>
-                        <img>
+                        <img src="https://em-content.zobj.net/thumbs/120/microsoft/319/bubbles_1fae7.png">
                         <h2>Algemeen</h2>
                     </a>
                 </div>
@@ -46,7 +46,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/De-Fles-en-de-Pods.php'">
                     <a>
-                        <img>
+                        <img src="https://i.pinimg.com/originals/03/d7/89/03d789b3c5a0c122f0dfb9a9d58d9778.png">
                         <h2>De Fles en de Pods</h2>
                     </a>
                 </div>
@@ -56,7 +56,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/Duurzaamheid.php'">
                     <a>
-                        <img>
+                        <img src="https://png.pngtree.com/png-clipart/20221230/original/pngtree-green-leaf-png-image_8826419.png">
                         <h2>Duurzaamheid</h2>
                     </a>
                 </div>
@@ -64,7 +64,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/Defect-en-problemen.php'">
                     <a>
-                        <img>
+                        <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_Thinking_large.png?v=1571606093">
                         <h2>Defect en probelemen</h2>
                     </a>
                 </div>
@@ -72,7 +72,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/Beschikbaarheid-en-levertijd.php'">
                     <a>
-                        <img>
+                        <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Package_Box_Emoji_large.png?v=1571606035">
                         <h2>Beschikbaarheid en levertijd</h2>
                     </a>
                 </div>
@@ -82,7 +82,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/Betaling.php'">
                     <a>
-                        <img>
+                        <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/Money_with_Wings_Emoji_grande.png?v=1571606064">
                         <h2>Betaling</h2>
                     </a>
                 </div>
@@ -90,7 +90,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/Retour-en-annuleringsbeleid.php'">
                     <a>
-                        <img>
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60793.png">
                         <h2>Retour -en annuleringsbeleid</h2>
                     </a>
                 </div>
@@ -98,7 +98,7 @@
             <td>
                 <div onClick="location.href='/Project-3/Support/SubPaginas/Abonnement.php'">
                     <a>
-                        <img>
+                        <img src="https://emojis.wiki/emoji-pics/google/credit-card-google.png">
                         <h2>Abonnement</h2>
                     </a>
                 </div>
