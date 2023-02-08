@@ -22,6 +22,7 @@
 <br><br>
 <a href="/Project-3/Account/SignUp.php">Create account</a>
 </div>
+<a href="/Project-3/DatabasePuller.php">All database</a>
 
 <script src="../Account/App.js"></script>
 <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
