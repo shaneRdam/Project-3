@@ -91,25 +91,37 @@ try {
 }
 $conn = null;
 
+echo "
+<script src='/Project-3/DatabaseHelper.js'>
+//Account Data Arrays
+let Account_ID = [];
+let Account_Email = [];
+let Account_Password = [];
+
+Account_ID = ".json_encode($Account_ID).";
+console.log(Account_ID);
+</script>
+";
 ?>
 
-<script type="text/javascript" src='/Project-3/DatabbaseHelper.js'>
-    <?php 
-     foreach($Account_ID as $key => $value){ 
-    ?>
-    Account_ID.push('<?php echo $value; ?>');
-    console.log(Account_ID)
-    <?php } ?>
-</script>
-
-
-<script type='text/javascript' src='/Project-3/DatabbaseHelper.js'>
+<script type="text/javascript" src='/Project-3/DatabaseHelper.js'>
     /*
-    Setarray(Account_ID, $Account_ID)
-    Account_Email = '<?php $Account_Email ?>'';
-    Account_Password = '<?php $Account_Password ?>';
+let Account_ID = [];
+let Account_Email = [];
+let Account_Password = [];
+
+    Account_ID = <?php echo json_encode($Account_ID); ?>;
+    Account_Email = <?php echo json_encode($Account_Email); ?>;
+    Account_Password = <?php echo json_encode($Account_Password); ?>;
+
+    console.log(Account_ID)
+    /*
+    Account_ID.push('<?php echo json_encode($Account_ID); ?>')
+    Account_Email.push('<?php echo json_encode($Account_Email); ?>');
+    Account_Password.push('<?php echo json_encode($Account_Password); ?>')
     */
 </script>
+
 
 
 <style>
