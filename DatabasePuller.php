@@ -12,12 +12,13 @@ try {
 
     $result = $stmt->fetchAll();
 
+    //Account array maken
     $Account_ID = [];
     $Account_Email = [];
     $Account_Password = [];
 
     echo "<table><td>";
-    foreach($result as $row) {
+    foreach($result as $row) { //Database info toevoegen aan alle Arrays
         array_push($Account_ID, $row['ID']);
         array_push($Account_Email, $row['Email']);
         array_push($Account_Password, $row['Password']);
@@ -47,48 +48,69 @@ try {
 
     $result = $stmt->fetchAll();
 
+    //Product array maken
     $Product_ID = [];
-    
+    $Product_Soort = [];
+    $Product_Naam = [];
+    $Product_Foto = [];
+    $Product_Prijs = [];
+    $Product_Aantal = [];
+    $Product_Beschrijving = [];
 
     echo "<table><td>";
-    foreach($result as $row) {
-        $Product_ID = [$row['ID']];
-        var_dump($Product_ID);
-        echo "<br>";
-
-        $Product_Soort = [$row['Soort']];
-        var_dump($Product_Soort);
-        echo "<br>";
-
-        $Product_Naam = [$row['Naam']];
-        var_dump($Product_Naam);
-        echo "<br>";
-
-        $Product_Foto = [$row['Foto']];
-        var_dump($Product_Foto);
-        echo "<br>";
-
-        $Product_Prijs = [$row['Prijs']];
-        var_dump($Product_Prijs);
-        echo "<br>";
-
-        $Product_Aantal = [$row['Aantal']];
-        var_dump($Product_Aantal);
-        echo "<br>";
-
-        $Product_Beschrijving = [$row['Beschrijving']];
-        var_dump($Product_Beschrijving);
-        echo "<br>";
+    foreach($result as $row) { //Database info toevoegen aan alle Arrays
+        array_push($Product_ID, $row['ID']);
+        array_push($Product_Soort, $row['Soort']);
+        array_push($Product_Naam, ['Naam']);
+        array_push($Product_Foto, $row['Foto']);
+        array_push($Product_Prijs, $row['Prijs']);
+        array_push($Product_Aantal, $row['Aantal']);
+        array_push($Product_Beschrijving, $row['Beschrijving']);
 
         echo "<br>";
     }
+    var_dump($Product_ID);
+    echo "<br>";
+    var_dump($Product_Soort);
+    echo "<br>";
+    var_dump($Product_Naam);
+    echo "<br>";
+    var_dump($Product_Foto);
+    echo "<br>";
+    var_dump($Product_Prijs);
+    echo "<br>";
+    var_dump($Product_Aantal);
+    echo "<br>";
+    var_dump($Product_Beschrijving);
+    echo "<br>";
+
     echo "</td></table>";
 
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
 $conn = null;
+
 ?>
+
+<script type="text/javascript" src='/Project-3/DatabbaseHelper.js'>
+    <?php 
+     foreach($Account_ID as $key => $value){ 
+    ?>
+    Account_ID.push('<?php echo $value; ?>');
+    console.log(Account_ID)
+    <?php } ?>
+</script>
+
+
+<script type='text/javascript' src='/Project-3/DatabbaseHelper.js'>
+    /*
+    Setarray(Account_ID, $Account_ID)
+    Account_Email = '<?php $Account_Email ?>'';
+    Account_Password = '<?php $Account_Password ?>';
+    */
+</script>
+
 
 <style>
     table, tr ,td {
