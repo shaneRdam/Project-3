@@ -35,13 +35,16 @@
 
             <div class="OntdekProducten">
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
-
+                <h1 name="OntdekLiH1">1</h1>
+                <img name="OntdekLiImg"> 
               </li>
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
-
+                <h1 name="OntdekLiH1">2</h1>
+                <img name="OntdekLiImg">
               </li>
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
-
+                <h1 name="OntdekLiH1">3</h1>
+                <img name="OntdekLiImg">
               </li>
 
             </div>
