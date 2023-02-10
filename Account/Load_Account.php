@@ -1,4 +1,6 @@
 <?php
+include '../Project-3/DatabasePuller.php';
+
 echo "Vandaag is " . date("Y/m/d") . "<br><br>";
 
 $Username = $_POST["uname"];

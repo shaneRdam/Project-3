@@ -17,23 +17,20 @@ try {
     $Account_Email = [];
     $Account_Password = [];
 
-    echo "<table><td>";
     foreach($result as $row) { //Database info toevoegen aan alle Arrays
         array_push($Account_ID, $row['ID']);
         array_push($Account_Email, $row['Email']);
         array_push($Account_Password, $row['Password']);
         
-        echo "<br>";
     }
+    /*
     var_dump($Account_ID);
     echo "<br>";
     var_dump($Account_Email);
     echo "<br>";
     var_dump($Account_Password);
         echo "<br>";
-
-    echo "</td></table>";
-    echo "<br><br><br>";
+*/
 
 
 } catch(PDOException $e) {
@@ -57,7 +54,6 @@ try {
     $Product_Aantal = [];
     $Product_Beschrijving = [];
 
-    echo "<table><td>";
     foreach($result as $row) { //Database info toevoegen aan alle Arrays
         array_push($Product_ID, $row['ID']);
         array_push($Product_Soort, $row['Soort']);
@@ -67,8 +63,8 @@ try {
         array_push($Product_Aantal, $row['Aantal']);
         array_push($Product_Beschrijving, $row['Beschrijving']);
 
-        echo "<br>";
     }
+    /*
     var_dump($Product_ID);
     echo "<br>";
     var_dump($Product_Soort);
@@ -83,28 +79,13 @@ try {
     echo "<br>";
     var_dump($Product_Beschrijving);
     echo "<br>";
-
-    echo "</td></table>";
+*/
 
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
 $conn = null;
 
-echo "
-<script src='/Project-3/DatabaseHelper.js'>
-//Account Data Arrays
-let Account_ID = [];
-let Account_Email = [];
-let Account_Password = [];
-
-Account_ID = ".json_encode($Account_ID).";
-console.log(Account_ID);
-</script>
-";
-?>
-
-<script type="text/javascript" src='/Project-3/DatabaseHelper.js'>
     /*
 let Account_ID = [];
 let Account_Email = [];
@@ -120,12 +101,19 @@ let Account_Password = [];
     Account_Email.push('<?php echo json_encode($Account_Email); ?>');
     Account_Password.push('<?php echo json_encode($Account_Password); ?>')
     */
-</script>
+
+    ?>
 
 
-
-<style>
-    table, tr ,td {
-        border: solid 1px black;
+    <?php 
+    //Alle extra functies
+    function GetRandomID($Naam) {
+        $ID = Count($Naam) -1;
+        return $ID;
     }
-</style>
+
+    function GetProductByID($ID, $Soort) {
+        return $Soort[$ID];
+    }
+
+    ?>

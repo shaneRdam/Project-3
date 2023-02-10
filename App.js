@@ -13,7 +13,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-function Shuffle() {
+function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal, Beschrijving ) {
   let ShuffleLi = document.getElementsByName("OntdekLi");
   for (i = 0; i < ShuffleLi.length; i++) {
     console.log(i + "Shuffle");
@@ -22,12 +22,24 @@ function Shuffle() {
     ShuffleLi[i].style.animation = 'none';
 
     // trigger reflow
-    console.log(ShuffleLi[i].offsetWidth);
-    console.log(ShuffleLi[i].offsetHeight);
+    //console.log(ShuffleLi[i].offsetWidth);
+    //console.log(ShuffleLi[i].offsetHeight);
+    ShuffleLi[i].offsetWidth;
+    ShuffleLi[i].offsetHeight;
   
+    //Voeg nieuw product toe
+    console.log("Hello " + Soort);
+    console.log("Heelooea");
+
     // add animation again
     ShuffleLi[i].style.animation = 'ShuffleLiAnim 2s';
   };
+
+  Naam;
+  Foto;
+  Prijs;
+  Aantal;
+  Beschrijving;
   }
 
   function Search() {

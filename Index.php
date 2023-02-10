@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+  <?php include '../Project-3/DatabasePuller.php' ?>
 <?php include '../Project-3/Assets/Navigatie.php';?>
 
     <main>
@@ -21,9 +22,17 @@
             <h2>
                 Ontdek nieuwe producten
             </h2>
-            <button class="ShuffleButton" onclick="Shuffle()">
-              Shuffle
-            </button>
+            <button class="ShuffleButton" onclick='Shuffle(
+              <?php echo json_encode($Product_ID); ?>, 
+              <?php echo json_encode($Product_Soort); ?>,
+              <?php echo json_encode($Product_Naam); ?>,
+              <?php echo json_encode($Product_Foto); ?>,
+              <?php echo json_encode($Product_Prijs); ?>,
+              <?php echo json_encode($Product_Aantal); ?>,
+              <?php echo json_encode($Product_Beschrijving); ?>)'>
+            Shuffle
+          </button>
+
             <div class="OntdekProducten">
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
 
