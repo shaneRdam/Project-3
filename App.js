@@ -45,11 +45,11 @@ function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal, Beschrijving ) {
     ShuffleLi[i].style.animation = 'ShuffleLiAnim 2s';
   };
 
-  Naam;
-  Foto;
-  Prijs;
-  Aantal;
-  Beschrijving;
+  //Naam;
+  //Foto;
+  //Prijs;
+  //Aantal;
+  //Beschrijving;
   }
 
   function Search() {
