@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-  <?php include '../Project-3/DatabasePuller.php' ?>
+  <?php require '../Project-3/DatabasePuller.php' ?>
 <?php include '../Project-3/Assets/Navigatie.php';?>
 
     <main>
