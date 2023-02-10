@@ -19,7 +19,6 @@ echo "
   var id = urlParams.get('id');
   console.log(id);
 
-  // Send the GET request to the same page
   var xhr = new XMLHttpRequest();
   xhr.open('GET', '?id=' + id, true);
   xhr.onreadystatechange = function() {
