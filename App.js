@@ -17,6 +17,8 @@ function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal, Beschrijving ) {
   let ShuffleLi = document.getElementsByName("OntdekLi");
   let ShuffleLiH1 = document.getElementsByName("OntdekLiH1");
   let ShuffleLiImg = document.getElementsByName("OntdekLiImg");
+  let ShufflePrijsText = document.getElementsByName("OntdekLiPrijs");
+
   for (i = 0; i < ShuffleLi.length; i++) {
     console.log(i + "Shuffle");
     ShuffleLi[i].classList.remove("OntdekLiAnimate");
@@ -30,10 +32,14 @@ function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal, Beschrijving ) {
     ShuffleLi[i].offsetHeight;
   
     //Voeg nieuw product toe
-    let NewID = Math.floor(Math.random() * ID.length)
-    ShuffleLiImg[i].src = Foto[NewID]
-    ShuffleLiH1[i].textContent = Naam[NewID]
-    console.log(Soort);
+    let NewID = Math.floor(Math.random() * ID.length)//Willekeurige ID maken
+
+    ShuffleLiImg[i].src = Foto[NewID] //Foto wijzigen
+
+    ShuffleLiH1[i].innerHTML = "" + Naam[NewID]
+
+    ShufflePrijsText[i].innerHTML = "Prijs: " + Prijs[NewID]
+
 
     // add animation again
     ShuffleLi[i].style.animation = 'ShuffleLiAnim 2s';

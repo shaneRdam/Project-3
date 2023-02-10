@@ -22,6 +22,7 @@
             <h2>
                 Ontdek nieuwe producten
             </h2>
+            
             <button class="ShuffleButton" onclick='Shuffle(
               <?php echo json_encode($Product_ID); ?>, 
               <?php echo json_encode($Product_Soort); ?>,
@@ -36,15 +37,18 @@
             <div class="OntdekProducten">
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
                 <h1 name="OntdekLiH1">1</h1>
-                <img name="OntdekLiImg"> 
+                <img name="OntdekLiImg" class="OntdekLiImg">
+                <h2 name="OntdekLiPrijs">Prijs: </h2> 
               </li>
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
                 <h1 name="OntdekLiH1">2</h1>
-                <img name="OntdekLiImg">
+                <img name="OntdekLiImg" class="OntdekLiImg">
+                <h2 name="OntdekLiPrijs">Prijs: </h2> 
               </li>
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
                 <h1 name="OntdekLiH1">3</h1>
-                <img name="OntdekLiImg">
+                <img name="OntdekLiImg" class="OntdekLiImg">
+                <h2 name="OntdekLiPrijs">Prijs: </h2> 
               </li>
 
             </div>

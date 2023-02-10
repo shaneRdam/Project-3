@@ -57,7 +57,7 @@ try {
     foreach($result as $row) { //Database info toevoegen aan alle Arrays
         array_push($Product_ID, $row['ID']);
         array_push($Product_Soort, $row['Soort']);
-        array_push($Product_Naam, ['Naam']);
+        array_push($Product_Naam, $row['Naam']);
         array_push($Product_Foto, $row['Foto']);
         array_push($Product_Prijs, $row['Prijs']);
         array_push($Product_Aantal, $row['Aantal']);

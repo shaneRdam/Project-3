@@ -227,8 +227,10 @@ main h1 {
 }
 
 .OntdekLiImg {
-  width: 10vw;
-  height: 10vw;
+  width: 18vw;
+  height: 15vw;
+  max-width: 18vw;
+  max-height: 15vw;
 }
 
 
