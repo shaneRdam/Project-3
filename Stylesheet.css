@@ -233,6 +233,23 @@ main h1 {
   max-height: 15vw;
 }
 
+.ProductPaginaImg {
+  width: 28vw;
+  height: 25vw;
+  max-width: 28vw;
+  max-height: 25vw;
+}
+
+.ProductPaginaFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ProductPaginaFlex div {
+  background-color: rgb(211, 211, 211);
+}
+
 
 /*Collapsible van homepagina*/
 .collapsible {

@@ -13,11 +13,12 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal, Beschrijving ) {
+function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal,) {
   let ShuffleLi = document.getElementsByName("OntdekLi");
   let ShuffleLiH1 = document.getElementsByName("OntdekLiH1");
   let ShuffleLiImg = document.getElementsByName("OntdekLiImg");
   let ShufflePrijsText = document.getElementsByName("OntdekLiPrijs");
+  let ProductLinks = document.getElementsByClassName("ProductLinks");
 
   for (i = 0; i < ShuffleLi.length; i++) {
     console.log(i + "Shuffle");
@@ -32,14 +33,14 @@ function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal, Beschrijving ) {
     ShuffleLi[i].offsetHeight;
   
     //Voeg nieuw product toe
-    let NewID = Math.floor(Math.random() * ID.length)//Willekeurige ID maken
+    let NewID = Math.floor(Math.random() * ID.length);//Willekeurige ID maken
 
-    ShuffleLiImg[i].src = Foto[NewID] //Foto wijzigen
+    ShuffleLiImg[i].src = Foto[NewID]; //Foto wijzigen
+    ShuffleLiH1[i].innerHTML = "" + Naam[NewID];
+    ShufflePrijsText[i].innerHTML = "Prijs: " + Prijs[NewID];
 
-    ShuffleLiH1[i].innerHTML = "" + Naam[NewID]
-
-    ShufflePrijsText[i].innerHTML = "Prijs: " + Prijs[NewID]
-
+    ProductLinks[i].href = "/Project-3/WinkelPagina/ProductPagina.php?id=" + NewID;
+    console.log(ProductLinks[i].href)
 
     // add animation again
     ShuffleLi[i].style.animation = 'ShuffleLiAnim 2s';
@@ -49,7 +50,6 @@ function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal, Beschrijving ) {
   //Foto;
   //Prijs;
   //Aantal;
-  //Beschrijving;
   }
 
   function Search() {
