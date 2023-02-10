@@ -37,21 +37,33 @@
               <a class="ProductLinks" href="/Project-3/WinkelPagina/ProductPagina.php?id=4">
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
                 <h1 name="OntdekLiH1">1</h1>
+                <div class="OntdekLiImgZoom">
+                  <figure>
                 <img name="OntdekLiImg" class="OntdekLiImg">
+                </figure>
+                </div>
                 <h2 name="OntdekLiPrijs">Prijs: </h2> 
               </li>
               </a>
               <a class="ProductLinks" href="/Project-3/WinkelPagina/ProductPagina.php?id=3">
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
                 <h1 name="OntdekLiH1">2</h1>
+                <div class="OntdekLiImgZoom">
+                  <figure>
                 <img name="OntdekLiImg" class="OntdekLiImg">
+            </figure>
+            </div>
                 <h2 name="OntdekLiPrijs">Prijs: </h2> 
               </li>
             </a>
             <a class="ProductLinks" href="/Project-3/WinkelPagina/ProductPagina.php?id=2">
               <li id="OntdekLi" class="OntdekLiAnimate" name="OntdekLi">
                 <h1 name="OntdekLiH1">3</h1>
+                <div class="OntdekLiImgZoom">
+                  <figure>
                 <img name="OntdekLiImg" class="OntdekLiImg">
+            </figure>
+            </div>
                 <h2 name="OntdekLiPrijs">Prijs: </h2> 
               </li>
             </a>

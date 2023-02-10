@@ -227,10 +227,31 @@ main h1 {
 }
 
 .OntdekLiImg {
-  width: 18vw;
-  height: 15vw;
-  max-width: 18vw;
-  max-height: 15vw;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+
+figure {
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.OntdekLiImgZoom {
+  display:block;
+}
+
+.OntdekLiImgZoom img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out; 
+}
+
+.OntdekLiImgZoom:hover img {
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: 0.3s ease-in-out; 
 }
 
 .ProductPaginaImg {
@@ -244,10 +265,11 @@ main h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 0 3vw;
 }
 
 .ProductPaginaFlex div {
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(226, 226, 226);
 }
 
 
