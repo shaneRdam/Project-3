@@ -12,6 +12,7 @@
         </div>
     </header>
 <nav>
+    <div>
         <a href="/Project-3/Index.php">Home</a>
         <div>|</div>
         <a href="/Project-3/WinkelPagina/Flessen/Flessen.php">Flessen</a>
@@ -19,6 +20,15 @@
         <a href="/Project-3/WinkelPagina/Pods/Pods.php">Pods</a>
         <div>|</div>
         <a href="/Project-3/WinkelPagina/Accessories/Accessories.php">Accessories</a>
+</div>
+<div class="SecondNav">
+    <a>Over ons</a>
+    <div>|</div>
+    <a>Hulp</a>
+    <div>|</div>
+    <a></a>
+    <div>|</div>
+    <a>Search</a>
     </nav>
     </body>
 
@@ -28,15 +38,25 @@
 }
 
 nav {
+    margin: 0 30vw;
+    margin-bottom: 2vw;
     background-color: rgb(218, 218, 218);
     border-radius: 25vh;
+    height: 9vh;
+    z-index: 2;
+    position: sticky;
+}
+
+nav:hover .SecondNav {
+    color: rgba(218, 218, 218, 1);
+    
+}
+
+nav div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 30vw;
-    height: 7vh;
-    z-index: 1;
 }
 
 nav a {
@@ -50,6 +70,10 @@ nav a:hover {
 
 .HeaderDiv {
     float: right;
+}
+
+.SecondNav {
+    z-index: 1;
 }
     </style>
 
