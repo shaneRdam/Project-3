@@ -225,6 +225,15 @@ Hierbij een handige video die je tot in detail laat zien hoe het werkt.
 
         <?php include '../Project-3/Assets/Footer.php';?>
 </body>
-<script src="/Project-3/App.js">
+<script src="/Project-3/App.js"></script>
+<script>
+  /*De shuffle functie roepen gelijk als the pagina wordt geladen*/
+    Shuffle(
+              <?php echo json_encode($Product_ID); ?>, 
+              <?php echo json_encode($Product_Soort); ?>,
+              <?php echo json_encode($Product_Naam); ?>,
+              <?php echo json_encode($Product_Foto); ?>,
+              <?php echo json_encode($Product_Prijs); ?>,
+              <?php echo json_encode($Product_Aantal); ?>);
 </script>
 </html>

@@ -12,6 +12,7 @@
         </div>
     </header>
 <nav>
+    <br>
     <div>
         <a href="/Project-3/Index.php">Home</a>
         <div>|</div>
@@ -24,11 +25,16 @@
 <div class="SecondNav">
     <a>Over ons</a>
     <div>|</div>
-    <a>Hulp</a>
+    <a href="/Project-3/Support/VeelgesteldeVragen.php">Hulp</a>
     <div>|</div>
-    <a></a>
+    <a href="/Project-3/Contact/Contact.php">Contact</a>
     <div>|</div>
-    <a>Search</a>
+    <div>
+        <form action="/Project-3/WinkelPagina/ZoekProductPagina.php" method="post">
+     <input class="NavZoekText" type="text" name="ZoekText" required>
+     <input class="NavZoekSubmit" type="submit" value="Zoek">
+     </form>
+    </div>
     </nav>
     </body>
 
@@ -42,14 +48,29 @@ nav {
     margin-bottom: 2vw;
     background-color: rgb(218, 218, 218);
     border-radius: 25vh;
-    height: 9vh;
+    height: 6vh;
+    width: 35vw;
     z-index: 2;
-    position: sticky;
+    position: absolute;
+    transition: 0.7s;
+    color: grey;
+    font-size: 1vw;
+}
+
+nav:hover {
+    height: 12vh;
+    transition: 0.7s;
 }
 
 nav:hover .SecondNav {
-    color: rgba(218, 218, 218, 1);
-    
+    transition: 0.7s;
+    opacity: 1;
+    height: 9vh;
+}
+
+nav:hover .SecondNav div {
+    transition: 0.7s;
+    opacity: 1;
 }
 
 nav div {
@@ -74,6 +95,37 @@ nav a:hover {
 
 .SecondNav {
     z-index: 1;
+    transition: 0.7s;
+    opacity: 0;
+    height: 0vh;
+}
+
+.NavZoekSubmit {
+    border: none;
+    background-color: inherit;
+    font-size: 1vw;
+    color: grey;
+    font-family: Times New Roman;
+}
+
+.NavZoekSubmit:hover {
+    cursor: pointer
+}
+
+.NavZoekText {
+    width: 0vw;
+    right: 5.8vw;
+    z-index: 3;
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+form:hover .NavZoekText {
+    transition: 0.7s;
+    right: 5.8vw;
+    width: 15vw;
+    opacity: 1;
 }
     </style>
 

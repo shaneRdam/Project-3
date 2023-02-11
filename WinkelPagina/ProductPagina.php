@@ -32,10 +32,27 @@ echo "
     if (isset($_GET['id'])) {
         $CurrentID = $_GET['id'];
       }
+
+      function GetHref($Naam) {
+        switch ($Naam) {
+          case "Fles";
+           echo "Flessen/Flessen.php";
+           break;
+          case "Pods";
+           echo "Pods/Pods.php";
+           break;
+          case "Accessoires";
+           echo "Accessories/Accessories.php";
+           break;
+        }
+      }
 ?>
 
 
 <div class="Maintext">
+  <a href="/Project-3/Index.php">< Home</a>
+  <a href="/Project-3/WinkelPagina/<?php echo GetHref($Product_Soort[$CurrentID]); ?>">< <?php echo $Product_Soort[$CurrentID] ?> </a>
+  <a> < <?php echo $Product_Naam[$CurrentID] ?> </a>
 <div class="ProductPaginaFlex">
     <div>
     <img class="ProductPaginaImg" src="<?php echo $Product_Foto[$CurrentID] ?>">
@@ -48,9 +65,11 @@ echo "
 
     </h2>
 
-    <h1>
-    <?php echo $Product_Prijs[$CurrentID] ?>
-    </h1>
+    <h2>
+    <?php echo "€" . $Product_Prijs[$CurrentID] ?>
+    <br>
+    <?php echo "Aantal: " . $Product_Aantal[$CurrentID] ?>
+    </h2>
     <p>
     <?php echo $Product_Beschrijving[$CurrentID] ?>
     </p>
