@@ -23,7 +23,7 @@
         <a href="/Project-3/WinkelPagina/Accessories/Accessories.php">Accessories</a>
 </div>
 <div class="SecondNav">
-    <a>Over ons</a>
+    <a href="/Project-3/Support/OverOns.php">Over ons</a>
     <div>|</div>
     <a href="/Project-3/Support/VeelgesteldeVragen.php">Hulp</a>
     <div>|</div>
@@ -31,7 +31,7 @@
     <div>|</div>
     <div>
         <form action="/Project-3/WinkelPagina/ZoekProductPagina.php" method="post">
-     <input class="NavZoekText" type="text" name="ZoekText" required>
+     <input class="NavZoekText" type="text" name="ZoekText">
      <input class="NavZoekSubmit" type="submit" value="Zoek">
      </form>
     </div>
