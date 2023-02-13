@@ -75,6 +75,7 @@ echo "
     </p>
     </div>
 </div>
+<?php include '/Xampp/htdocs/Project-3/Assets/ReviewTabel.php' ?>
 
 
         </div>

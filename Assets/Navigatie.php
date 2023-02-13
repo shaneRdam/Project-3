@@ -31,7 +31,7 @@
     <div>|</div>
     <div>
         <form action="/Project-3/WinkelPagina/ZoekProductPagina.php" method="post">
-     <input class="NavZoekText" type="text" name="ZoekText">
+     <input class="NavZoekText" type="text" name="ZoekProductText">
      <input class="NavZoekSubmit" type="submit" value="Zoek">
      </form>
     </div>

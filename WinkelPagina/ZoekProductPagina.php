@@ -64,7 +64,7 @@ function Valid($ID) {
         if ($Product_Soort[$ID] != $Accessoires && $CheckBoxAccessoires == "checked") {
             return false;
         }
-        if(str_contains(strtolower($Product_Naam[$ID]), strtolower($ZoekProductText))) {
+        if(str_contains(strtolower($Product_Naam[$ID]), strtolower($ZoekProductText)) || str_contains(strtolower($Product_Soort[$ID]), strtolower($ZoekProductText))) {
             return true;
         }
         elseif($ZoekProductText != "") {

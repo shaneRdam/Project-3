@@ -9,8 +9,17 @@
     <title>Document</title>
 </head>
 <body>
+<?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
 <div class="Maintext">
+
+<div>
+<form action="/Project-3/WinkelPagina/ZoekProductPagina.php" method="post">
+     <input class="ZoekProductText" type="text" name="ZoekProductText" placeholder="Zoek hier voor alle onze producten." >
+     <input type="submit" value="Zoek">
+     </form>
+</div>
+
 <table class="FlessenTable">
     <tr>
         <td>
@@ -21,16 +30,24 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-        <td>
-            <li>
-                
-            </li>
-        </td>
+        <?php echo "
+                <td>
+                <li>
+                <h1>$Product_Naam[0]</h1>
+                    <img class='FlessenTableImg' src='$Product_Foto[0]'>
+                    <h2>$Product_Prijs[0]</h2>
+                    <p>$Product_Beschrijving[0]</p>
+                </li>
+            </td>
+            <td>
+                <li>
+                <h1>$Product_Naam[1]</h1>
+                <img class='FlessenTableImg' src='$Product_Foto[1]'>
+                <h2>$Product_Prijs[1]</h2>
+                <p>$Product_Beschrijving[1]</p>
+                </li>
+            </td>
+            "; ?>
     </tr>
 </table>
 
@@ -42,69 +59,31 @@
             </h1>
         </td>
     </tr>
-    <tr>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-        <td>
-            <li>
-                
-            </li>
-        </td>
-    </tr>
+    <?php for ($i = 0; $i < count($Product_ID) ; $i++) { 
+    if ($i > 1 && $Product_Soort[$i] == "Fles") {
+    echo "
+    <a class='ProductLinks' href='/Project-3/WinkelPagina/ProductPagina.php?id=$i'>
+    <div class='ZoekPaginaResultatenElement'>
+    <img src='$Product_Foto[$i]'>
+    <div>
+        <h1>$Product_Naam[$i]</h1>
+        <p>
+        $Product_Beschrijving[$i]
+        </p>
+    </div>
+    <div>
+    <h1>
+    $Product_Prijs[$i]
+    </h1>
+    <h1>
+    $Product_Aantal[$i]
+    </h1>
+    </div>
+</div>
+</a>
+    ";
+}
+} ?>
 </table>
 
 
