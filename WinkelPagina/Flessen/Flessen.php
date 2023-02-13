@@ -31,22 +31,45 @@
     </tr>
     <tr>
         <?php echo "
-                <td>
-                <li>
-                <h1>$Product_Naam[0]</h1>
-                    <img class='FlessenTableImg' src='$Product_Foto[0]'>
-                    <h2>$Product_Prijs[0]</h2>
-                    <p>$Product_Beschrijving[0]</p>
-                </li>
-            </td>
-            <td>
-                <li>
+    <a class='ProductLinks' href='/Project-3/WinkelPagina/ProductPagina.php?id=0'>
+    <div class='ZoekPaginaResultatenElement'>
+    <img src='$Product_Foto[0]'>
+    <div>
+        <h1>$Product_Naam[0]</h1>
+        <p>
+        $Product_Beschrijving[0]
+        </p>
+    </div>
+    <div>
+    <h1>
+    $Product_Prijs[0]
+    </h1>
+    <h1>
+    $Product_Aantal[0]
+    </h1>
+    </div>
+</div>
+</a>
+
+            <a class='ProductLinks' href='/Project-3/WinkelPagina/ProductPagina.php?id=1'>
+            <div class='ZoekPaginaResultatenElement'>
+            <img src='$Product_Foto[1]'>
+            <div>
                 <h1>$Product_Naam[1]</h1>
-                <img class='FlessenTableImg' src='$Product_Foto[1]'>
-                <h2>$Product_Prijs[1]</h2>
-                <p>$Product_Beschrijving[1]</p>
-                </li>
-            </td>
+                <p>
+                $Product_Beschrijving[1]
+                </p>
+            </div>
+            <div>
+            <h1>
+            $Product_Prijs[1]
+            </h1>
+            <h1>
+            $Product_Aantal[1]
+            </h1>
+            </div>
+        </div>
+        </a>
             "; ?>
     </tr>
 </table>

@@ -25,8 +25,9 @@ echo "
     <?php
     echo "
     <!-- Review maken -->
+    <h1>Laat zelf een review achter over dit product!</h1>
     <form action='/Project-3/Assets/Review/Create_Review.php?id=$CurrentID' method='post'>
-    <h1>Naam</h1>
+    <h2>Naam</h2>
     <input type='text' name='Naam' required>
     <br>
 
