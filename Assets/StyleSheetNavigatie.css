@@ -1,3 +1,7 @@
+* {
+    background-color: white;
+}
+
 header {
     background-color: white;
 }
@@ -11,6 +15,7 @@ nav {
     align-items: center;
     margin: 0 30vw;
     height: 7vh;
+    z-index: 1;
 }
 
 nav a {
@@ -42,4 +47,16 @@ nav a:hover {
     color: grey;
     text-decoration: underline;
     cursor: pointer;
+}
+
+footer {
+    padding-bottom: 5vh;
+    width: 100%;
+}
+
+.ContactFooter {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(215, 215, 215);
+    padding: 4vw 0;
 }
