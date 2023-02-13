@@ -27,15 +27,14 @@ echo "
     <!-- Review maken -->
     <form action='/Project-3/Assets/Review/Create_Review.php?id=$CurrentID' method='post'>
     <h1>Naam</h1>
-    <input type='text' name='Naam'>
+    <input type='text' name='Naam' required>
     <br>
 
     <h2>Email</h2>
-    <input type='email' name='Email'>
+    <input type='email' name='Email' required>
     <h2 value='$CurrentID'></h2>
-    <h2 value='date(Y,m,d)'></h2>
 
-    <h2>SterrenRating</h2>
+    <h2>Sterrenrating</h2>
     <input type='radio' value='1' name='SterrenRating'> 1
     <input type='radio' value='2' name='SterrenRating'> 2
     <input type='radio' value='3' name='SterrenRating'> 3
@@ -44,7 +43,7 @@ echo "
     <br>
 
     <h2>Beschrijving</h2>
-    <input type='text' name='Beschrijving'>
+    <input type='text' name='Beschrijving' required>
     <input type='submit'>
 </form>
 
@@ -63,6 +62,7 @@ echo "
             <br>
             <div>
                 <h1>$Reviews_Naam[$i]</h1><h3>$Reviews_Email[$i]</h3>
+                <br><h3>$Reviews_Sterren[$i] Sterren</h3>
                 <p>
                 $Reviews_Beschrijving[$i]
                 </p>
@@ -74,3 +74,34 @@ echo "
     }
     ?>
     </div>
+
+    <style>
+.ReviewTabelFlex {
+  display: flex;
+  flex-direction: column-reverse;
+}
+      
+.ReviewTabelElement {
+  background-color: #fcfcfc;
+  border: solid 0.1vw black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1vw;
+  padding: 2vw;
+  min-width: 10vw;
+  width: 30vw;
+  float: left;
+}
+
+.ReviewTabelElement div, .ReviewTabelElement div p {
+  padding: 1vw;
+}
+
+.ReviewTabelElement h1 {
+  font-size: 1.5vw;
+}
+
+.ReviewTabelElement p {
+  border: black dotted 0.2vw;
+}
+    </style>

@@ -58,9 +58,10 @@ echo "
     <img class="ProductPaginaImg" src="<?php echo $Product_Foto[$CurrentID] ?>">
     </div>
     <div>
-    <h1 class="ProductPaginaNaam">
+    <h1 class="ProductPaginaNaam"><br>
     <?php echo $Product_Naam[$CurrentID] ?>
     </h1>
+    <h1><?php echo SterrenBerekenen() ?></h1>
     <h2>
 
     </h2>
@@ -76,7 +77,30 @@ echo "
     </div>
 </div>
 <?php include '/Xampp/htdocs/Project-3/Assets/ReviewTabel.php' ?>
-
+<?php 
+    function SterrenBerekenen() {
+      $TotalSterren = 0;
+      $Sterrenteller = 0;
+      global $Reviews_Sterren;
+      global $Reviews_ID;
+      global $Reviews_Product_ID;
+      global $CurrentID;
+      for ($i = 0 ; $i < count($Reviews_ID);) { 
+        $i++;
+        if($Reviews_Product_ID[$i] == $CurrentID) {
+          $TotalSterren = $TotalSterren + $Reviews_Sterren[$i];
+          $Sterrenteller++;
+        }
+        if($TotalSterren != 0 ) {
+        $TotalSterren = floatval($TotalSterren) / $Sterrenteller;
+        return floatval($TotalSterren)." Sterren";
+      }
+      else {
+        return "";
+      }
+    }
+    }
+    ?>
 
         </div>
 

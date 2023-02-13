@@ -50,11 +50,11 @@
   $sql = "INSERT INTO reviews (ID, Product_ID, Naam, Email, Sterren, Datum, Beschrijving)
   VALUES ('$next_review_id', '$product_id', '$naam', '$email', '$sterren', '$datum', '$beschrijving')";
 
-//   if ($conn->query($sql) === TRUE) {
-//     echo "Review added successfully";
-//   } else {
-//     echo "Error: " . $sql . "<br>" . $conn->error;
-//   }
+  if ($conn->query($sql) === TRUE) {
+    echo "Review added successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
 
   // Close the connection
   $conn->close();
