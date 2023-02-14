@@ -1,11 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
 /*Deze Stylesheet bepaalt de basis kleuren van de alle websites met variabelen*/
 :root {
     --TextSize: 1vw;
     --Maincolor: purple;
 }
 
+html, body {
+  width: 98vw;
+}
+
 * {
     font-size: var(--TextSize);
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 main {

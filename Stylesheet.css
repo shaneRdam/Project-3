@@ -15,8 +15,8 @@ main {
   background: linear-gradient(
     70deg,
     purple 0%,
-    purple 35%,
-    rgba(175, 238, 238, 0) 35%,
+    purple 40%,
+    rgba(175, 238, 238, 0) 40%,
     rgba(175, 238, 238, 0) 100%
   );
   min-height: 45vh;
@@ -192,6 +192,10 @@ main h1 {
   text-align: center;
 }
 
+.VGVSection table tr td a {
+  font-weight: bolder;
+}
+
 .OrangeButton {
   width: 10vw;
   height: 3vw;
@@ -340,6 +344,48 @@ figure {
   color: black;
   text-decoration: none;
 }
+
+/* OveronsPagina */
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(0, 0, 0);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.tabcontent .tabcontentflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tabcontent .tabcontentflex img {
+  width: 25vw;
+  height: 15vw;
+}
+
+.tabcontent .tabcontentflex * {
+  margin: 3vw;
+}
+
 
 /*Collapsible van homepagina*/
 .collapsible {

@@ -107,7 +107,7 @@
     </table>
 </section>
 
-<section>
+<section class="VGVSection">
     <h1>FAQs</h1>
     <table>
         <tr>

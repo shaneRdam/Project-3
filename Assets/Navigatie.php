@@ -48,7 +48,7 @@ nav {
     margin-bottom: 2vw;
     background-color: rgb(218, 218, 218);
     border-radius: 25vh;
-    height: 6vh;
+    height: 7.3vh;
     width: 35vw;
     z-index: 2;
     position: absolute;
@@ -58,14 +58,15 @@ nav {
 }
 
 nav:hover {
-    height: 12vh;
+    height: 13vh;
     transition: 0.7s;
+    border-radius: 12.5vh;
 }
 
 nav:hover .SecondNav {
     transition: 0.7s;
     opacity: 1;
-    height: 9vh;
+    height: 8vh;
 }
 
 nav:hover .SecondNav div {
@@ -105,7 +106,7 @@ nav a:hover {
     background-color: inherit;
     font-size: 1vw;
     color: grey;
-    font-family: Times New Roman;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 .NavZoekSubmit:hover {
