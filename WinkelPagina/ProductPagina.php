@@ -92,8 +92,8 @@ echo "
           $Sterrenteller++;
         }
         if($TotalSterren != 0 ) {
-        $TotalSterren = floatval($TotalSterren) / $Sterrenteller;
-        return floatval($TotalSterren)." Sterren";
+        $Gem = floatval($TotalSterren) / $Sterrenteller;
+        return floatval($Gem)." Sterren";
       }
       else {
         return "";
