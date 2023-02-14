@@ -75,6 +75,7 @@ echo "
     <?php echo $Product_Beschrijving[$CurrentID] ?>
     </p>
     <?php include '/Xampp/htdocs/Project-3/Assets/ToevoegenWinkelwagenButton.php' ?>
+    <?php $ID = $CurrentID ?>
     </div>
 </div>
 <?php include '/Xampp/htdocs/Project-3/Assets/ReviewTabel.php' ?>
