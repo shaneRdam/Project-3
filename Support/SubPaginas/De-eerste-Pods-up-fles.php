@@ -11,8 +11,11 @@
 <body>
 <?php include '/Xampp/htdocs/Project-3/Assets/ContactHeader.php';?>
 <div class="Maintext">
+
+    <div class="VGVSubPagina">
 <h1>De eerste air up fles - Laten we beginnen!</h1>
 <h2>Lidwoord</h2>
+<br><br>
 
 <table>
     <tr>
@@ -40,8 +43,9 @@
         </td>
     </tr>
 </table>
+</div>
 
 </div>
-        <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
+<?php include '/Xampp/htdocs/Project-3/Assets/ContactFooter.php';?>
 </body>
 </html>
