@@ -10,39 +10,49 @@ html {
 }
 
 main {
+  background-color: rgb(102,72,195);
+  z-index: 0;
+  box-shadow: inset 0px 0px 68px 8px rgba(0,0,0,0.75);
+}
+
+main, main div {
   top: 0;
   left: 0;
-  background: linear-gradient(
-    70deg,
-    purple 0%,
-    purple 40%,
-    rgba(175, 238, 238, 0) 40%,
-    rgba(175, 238, 238, 0) 100%
-  );
-  min-height: 45vh;
+  min-height: 30vw;
   width: 100%;
   display: flex;
   align-items: flex-end;
-  z-index: 0;
 }
 
 main h1 {
   font-size: 3vw;
+  margin-left: 1.5vw;
 }
 
 .StappenImages {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
 }
 
 .StappenImages div {
   width: 25vw;
-  height: 25vw;
+  height: 18vw;
   background-color: rgb(200, 200, 200);
   text-align: center;
+  background-size: 110%;
+  background-position: -2vw 0vw;
 }
+
+.StappenSection h2 {
+  font-size: 2vw;
+}
+
+.StappenImages .one {background-image: url("https://nl.air-up.com/_ipx/f_webp,w_1800,q_75/https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Ff07fb4ba10994058bfc8e0ea7ae07e70%252F8f02c1949889434faefc3d3d1c010691");}
+.StappenImages .two {background-image: url("/Project-3/Assets/Video_Assets/Gifs/assets_f07fb4ba10994058bfc8e0ea7ae07e70_95c22ab370e44e44b4d9dd2b5c9453dc_compressed.gif");}
+.StappenImages .three {background-image: url("https://nl.air-up.com/_ipx/f_webp,w_1800,q_75/https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Ff07fb4ba10994058bfc8e0ea7ae07e70%252F531ff180b9194164a44ce63232d157d1");}
+
 
 .OntdekProducten {
   display: flex;
@@ -58,12 +68,44 @@ main h1 {
   text-align: center;
 }
 
+
+.RetronasaalFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.RetronasaalFlex div {
+  width: 51%;
+}
+
+.RetronasaalFlex div h2 {
+  font-size: 2vw;
+}
+
+.RetronasaalFlex img {
+  width: 40vw;
+  height: 40vw;
+}
+
+/*Begin shuffle knop en div */
+
 .ShuffleButton {
   margin-bottom: 3vw;
+  max-width: 8vw;
 }
 
 .OntdekLiAnimate {
   animation: ShuffleLiAnim 2s;
+}
+
+.ShuffleDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  padding-bottom: 0vw;
 }
 
 @keyframes ShuffleLiAnim {
@@ -146,24 +188,43 @@ main h1 {
  text-align: center;
 }
 
-.VGVpurple div h1 {
-  color: white;
+.VGVpurple div {
+  margin-bottom: 2vw;
 }
 
-.VGVpurple div input {
+.VGVpurple div h1 {
+  color: white;
+  font-size: 3vw;
+}
+
+.VGVSearchBar {
+  min-height: 25vw;
+  max-width: 40vw;
+  margin: 0 29vw;
+  padding: 0.5vw;
+}
+
+.VGVSearchBar button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.VGVpurple div input, .VGVSearchBar {
   border-radius: 2vw;
   min-height: 2vw;
   min-width: 35vw;
   background-color: white;
-  border-style: solid;
+  border-style: none;
   border-width: 0.5vw;
   border-color: white;
 }
 
 .VeelgesteldeVragenTable tr td div  {
   background-color: white;
-  box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
-  width: 15vw;
+  box-shadow: 0px 0px 0.3vw 1px rgba(0,0,0,0.25);
+  width: 20vw;
   height: 10vw;
   margin: 1vw;
   padding: 0;
@@ -190,17 +251,41 @@ main h1 {
 
 .VeelgesteldeVragenH1 {
   text-align: center;
+  font-size: 2.5vw;
 }
 
 .VGVSection table tr td a {
   font-weight: bolder;
+  font-size: 1.2vw;
+}
+
+.VGVSection table tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1vw;
+}
+
+.VGVSection table tr td {
+  max-width: 25vw;
+  margin: 1vw;
+}
+
+.VGVSection table {
+  display: flex;
+  justify-content: center;
+}
+
+.VGVSection h1 {
+  text-align: center;
+  font-size: 2vw;
 }
 
 .OrangeButton {
   width: 10vw;
   height: 3vw;
   background-color: orange;
-  border-radius: 45%;
+  border-radius: 2vw;
   border-color: orange;
   border-width: 0.2vw;
   border-style: solid;
@@ -215,6 +300,29 @@ main h1 {
   border-width: 0.2vw;
   border-style: solid;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.PurpleButton {
+  width: 10vw;
+  height: 3vw;
+  background-color: rgb(102,72,193);
+  border-radius: 2vw;
+  border-color: rgb(102,72,193);
+  border-width: 0.2vw;
+  border-style: solid;
+  transition: 0.3s;
+  color: white;
+}
+
+.PurpleButton:hover {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(102,72,193);
+  color: rgb(102,72,193);
+  border-width: 0.2vw;
+  border-style: solid;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .FlessenTable tr td li {
@@ -399,7 +507,7 @@ figure {
   outline: none;
   font-size: 15px;
   border-bottom: black 0 solid;
-  border-bottom-width: 0.2vw;
+  border-bottom-width: 0.12vw;
 }
 
 .content {
@@ -408,4 +516,9 @@ figure {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: white;
+}
+
+
+.ContactFooter p:hover {
+  text-decoration: underline;
 }

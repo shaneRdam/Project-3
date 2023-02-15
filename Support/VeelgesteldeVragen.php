@@ -17,7 +17,10 @@
     <h1>
     Hallo! Hoe kunnen wij je helpen?
     </h1>
-    <input type="text" id="SearchText" placeholder="Voer hier u zoek term in"><button onclick="Search()"><i class="fa fa-search"></i></button>
+    <div class="VGVSearchBar">
+    <button onclick="Search()"><i class="fa fa-search"></i></button>
+    <input type="text" id="SearchText" placeholder="Voer hier u zoek term in">
+    </div>
     </div>
 </section>
 
@@ -196,16 +199,7 @@
         </tr>
     </table>
 </section>
-<section>
-    <h1>
-    Staat het antwoord op je vraag er niet tussen?
-    </h1>
-    <button class="OrangeButton">
-        <a href="/Project-3/Contact/Contact.php">
-        Neem contact op
-        </a>
-    </button>
-</section>
+
         </div>
 
 

@@ -13,12 +13,15 @@
 <?php include '../Project-3/Assets/Navigatie.php';?>
 
     <main>
+      <div>
         <h1>
         Niet je standaard waterfles.
 </h1>
+</div>
 </main>
 <div class="Maintext">
         <section>
+          <div class="ShuffleDiv">
             <h2>
                 Ontdek nieuwe producten
             </h2>
@@ -32,6 +35,7 @@
               <?php echo json_encode($Product_Aantal); ?>)'>
             Shuffle
           </button>
+          </div>
 
             <div class="OntdekProducten">
               <a class="ProductLinks" href="/Project-3/WinkelPagina/ProductPagina.php?id=4">
@@ -71,33 +75,36 @@
             </div>
         </section>
         <br><br>
-    <section>
+    <section class="StappenSection">
             <h2>
                 Hoe werkt het?
             </h2>
             <section class="StappenImages">
-              <div>
+              <div class="one">
                 <h3>
                   Stap 1: Vul de fles
                 </h3>
                 
               </div>
-              <div>
+              <div class="two">
                 <h3>
                   Stap 2: Activeer je geur pod
                 </h3>
 
               </div>
-              <div>
+              <div class="three">
                 <h3>
                   Stap 3: Geniet!
                 </h3>
 
               </div>
             </section>
+            <br><br><br>
 
             <br><br>
-            <h2>
+            <div class="RetronasaalFlex">
+              <div>
+              <h2>
                 Retronasaal: de wetenschap achter de geur
             </h2>
             <p>
@@ -112,6 +119,10 @@
 
             *National Institute on Deafness and Other Communication
             </p>
+              </div>
+              <img src="/Project-3/Assets/Video_Assets/Gifs/assets_08f6ee9c3cf541f3bf2664eb8b4199b3_6e4532d470b34469a1b8e17b0c315777_compressed.gif">
+            </div>
+
             <section>
 
             </section>

@@ -3,11 +3,16 @@
 /*Deze Stylesheet bepaalt de basis kleuren van de alle websites met variabelen*/
 :root {
     --TextSize: 1vw;
-    --Maincolor: purple;
+    --Maincolor: rgb(44,32,92);
+    --TextColor: white;
+    --FooterColor: rgb(102,72,193);
+    --ContactFooterColor: rgb(239, 170, 43);
 }
 
 html, body {
-  width: 98vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -15,25 +20,27 @@ html, body {
     font-family: 'Proxima Nova', sans-serif;
 }
 
-main {
+main div {
     background: linear-gradient(
-      70deg,
+      75deg,
       var(--Maincolor) 0%,
-      var(--Maincolor) 35%,
-      rgba(175, 238, 238, 0) 35%,
+      var(--Maincolor) 40%,
+      rgba(175, 238, 238, 0) 40%,
       rgba(175, 238, 238, 0) 100%
     );
+    color: var(--TextColor);
 }
 
 .VGVpurple {
-  background-color: var(--Maincolor);
+  background: rgb(175,0,255);
+  background: radial-gradient(circle, rgba(175,0,255,1) 39%, rgba(44,32,92,1) 100%);
 }
 
 .FooterLinearGradientPurple {
     background: linear-gradient(
       -3deg,
-      var(--Maincolor) 0%,
-      var(--Maincolor) 75%,
+      var(--FooterColor) 0%,
+      var(--FooterColor) 75%,
       rgba(175, 238, 238, 0) 75%,
       rgba(175, 238, 238, 0) 100%
     );
@@ -42,5 +49,5 @@ main {
   }
 
 .FooterBGcolor {
-    background-color: var(--Maincolor);
+    background-color: var(--FooterColor);
   }

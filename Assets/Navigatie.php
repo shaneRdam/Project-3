@@ -6,10 +6,6 @@
     <body>
     <header>
         <h1>Pods up</h1>
-        <div class="HeaderDiv">
-            <a href="/Project-3/Account/LogIn.php"><i class="fa fa-user-circle Fa-Icon" style="font-size:2.5vw"></i></a>
-            <a href="/Project-3/WinkelPagina/WinkelWagen.php"><li class="fa fa-shopping-cart Fa-Icon" style="font-size:2.5vw"></li></a>
-        </div>
     </header>
 <nav>
     <br>
@@ -36,11 +32,32 @@
      </form>
     </div>
     </nav>
+    <div class="HeaderDiv">
+            <a href="/Project-3/Account/LogIn.php"><i class="fa fa-user-circle Fa-Icon" style="font-size:2.5vw"></i></a>
+            <a href="/Project-3/WinkelPagina/WinkelWagen.php"><li class="fa fa-shopping-cart Fa-Icon" style="font-size:2.5vw"></li></a>
+        </div>
     </body>
 
     <style>
         header {
     background-color: white;
+    border-bottom: black solid 0.1vw;
+    width: 100%;
+}
+
+.HeaderDiv {
+    float: right;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 90%;
+    right: 1;
+    background-color: rgb(218, 218, 218);
+    border-radius: 25vh;
+    height: 7.3vh;
+    width: 8vw;
 }
 
 nav {
@@ -128,6 +145,44 @@ form:hover .NavZoekText {
     width: 15vw;
     opacity: 1;
 }
+
+.HeaderDiv, nav {
+    margin-top: 1vw;
+    position: fixed;
+    z-index: 3;
+}
+
+header h1 {
+    margin-left: 1vw;
+}
+
+nav {
+  top: 3.5vw;
+}
+
+.HeaderDiv {
+  position: fixed;
+  top: 3.5vw;
+  transition: top 0.7s;
+}
+
     </style>
+    <script>
+const navbar = document.querySelector('nav');
+const headerDiv = document.querySelector('.HeaderDiv');
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = '4.7vh';
+    headerDiv.style.top = '4.7vh';
+  } else {
+    navbar.style.top = '-7.3vh';
+    headerDiv.style.top = '-7.3vh';
+  }
+  prevScrollpos = currentScrollPos;
+}
+    </script>
 
 </html>

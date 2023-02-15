@@ -11,7 +11,7 @@
             <h1>
                 Staat het antwoord op u vraag er niet tussen?
             </h1>
-            <button class="OrangeButton">Neem contact op</button>
+            <button class="OrangeButton" onclick="window.location.href='/Project-3/Contact/Contact.php'">Neem contact op</button>
         </section>
         <section class="ContactSectionOrange">
         <p onclick="location.href='/Project-3/Index.php'">
@@ -46,7 +46,7 @@
 .ContactSectionOrange {
     width: 100%;
     text-align: center;
-    background-color: orange;
+    background-color: rgb(239, 170, 43);
     padding: 4vw 0;
     color: white;
 }

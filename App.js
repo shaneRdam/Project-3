@@ -60,3 +60,14 @@ function Shuffle(ID, Soort, Naam, Foto, Prijs, Aantal,) {
     console.log(FinalSearch)
     window.open(FinalSearch)
   }
+
+  // Get the input field
+var input = document.getElementById("SearchText");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    Search();
+  }
+});
