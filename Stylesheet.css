@@ -303,12 +303,12 @@ main h1 {
   margin-bottom: 2vw;
 }
 
-.VGVSubPagina table tr td a {
+.VGVSubPagina table tr td a, .VGVSection table tr td a {
   text-decoration: none;
   color: black;
 }
 
-.VGVSubPagina table tr td a:hover {
+.VGVSubPagina table tr td a:hover, .VGVSection table tr td a:hover {
   text-decoration: underline;
   color: rgb(25, 67, 181);
 }

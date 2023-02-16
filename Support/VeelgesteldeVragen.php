@@ -115,7 +115,7 @@
     <table>
         <tr>
             <td>
-                <a>
+                <a href="https://support.air-up.com/nl/de-eerste-fles-laten-we-beginnen!-H1XTvsLI5" target="_blank">
                 De eerste fles? Laten we beginnen!
                 </a>
                 <p>
@@ -124,7 +124,7 @@
                 </p>
             </td>
             <td>
-                <a>
+                <a href="https://support.air-up.com/nl/hoe-lang-werkt-een-pod-HJoepiIU5" target="_blank">
                 Hoe lang werkt een pod?
                 </a>
                 <p>
@@ -135,7 +135,7 @@
         </tr>
         <tr>
             <td>
-                <a>
+                <a href="https://support.air-up.com/nl/mijn-fles-lekt-hoe-kan-dat-ryOEk2ILq" target="_blank">
                 Mijn fles lekt - hoe kan dat?
                 </a>
                 <p>
@@ -145,7 +145,7 @@
                 </p>
             </td>
             <td>
-                <a>
+                <a href="https://support.air-up.com/nl/mijn-pod-is-geactiveerd-maar-ik-proef-niets.-hoe-kan-dit-ryo2J3ULc" target="_blank">
                 Mijn pod is geactiveerd maar ik proef niets. Hoe kan dit?
                 </a>
                 <p>
@@ -156,7 +156,7 @@
         </tr>
         <tr>
             <td>
-                <a>
+                <a href="https://support.air-up.com/nl/hoe-maak-ik-de-fles-schoon-rJQchjUUc" target="_blank">
                 Hoe maak ik de fles schoon?
                 </a>
                 <p>
@@ -166,7 +166,7 @@
                 </p>
             </td>
             <td>
-                <a>
+                <a href="https://support.air-up.com/nl/drink-ik-echt-alleen-water-BkL0_jUIq" target="_blank">
                 Drink ik echt alleen water?
                 </a>
                 <p>
@@ -177,7 +177,7 @@
         </tr>
         <tr>
             <td>
-                <a>
+                <a href="https://support.air-up.com/nl/als-ik-een-slok-neem-komt-er-lucht-mee-en-hoor-ik-een-geluid.-is-dat-normaal-Hk9kJdcPc" target="_blank">
                 Als ik een slok neem, komt er lucht mee en hoor ik een geluid. 
                 Is dat normaal?
                 </a>
@@ -188,7 +188,7 @@
                 </p>
             </td>
             <td>
-                <a>
+                <a href="https://support.air-up.com/nl/waar-is-mijn-air-up-bestelling-SJIHMuoJo" target="_blank">
                 Waar is mijn air up bestelling?
                 </a>
                 <p>
