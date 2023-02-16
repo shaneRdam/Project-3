@@ -21,7 +21,7 @@
     <tr>
         <td>
             <h3>
-                <a>
+                <a href="https://support.air-up.com/nl/de-eerste-fles-laten-we-beginnen!-H1XTvsLI5" target="_blank">
                 De eerste fles? Laten we beginnen!
                 </a>
             </h3>
@@ -32,7 +32,7 @@
         </td>
         <td>
             <h3>
-                <a>
+                <a href="https://support.air-up.com/nl/online-gebruikershandleiding-S1gtBGFRq" target="_blank">
                 Online gebruikershandleiding
                 </a>
             </h3>

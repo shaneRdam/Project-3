@@ -11,7 +11,7 @@
         Terug naar home pagina
     </a>
     <a href="/Project-3/Support/VeelgesteldeVragen.php">
-        Terug naar contact
+        Terug naar hulp
     </a>
 </header>
 <div class="HeaderDiv2">

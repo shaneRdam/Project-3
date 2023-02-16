@@ -33,6 +33,7 @@ main h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: white;
 
 }
 
@@ -299,7 +300,19 @@ main h1 {
 
 .VGVSubPagina table tr td {
   max-width: 45%;
+  margin-bottom: 2vw;
 }
+
+.VGVSubPagina table tr td a {
+  text-decoration: none;
+  color: black;
+}
+
+.VGVSubPagina table tr td a:hover {
+  text-decoration: underline;
+  color: rgb(25, 67, 181);
+}
+
 
 .VGVSubPagina h1 {
   font-size: 2.5vw;
@@ -307,6 +320,11 @@ main h1 {
 
 .VGVSubPagina h2 {
   font-size: 1.7vw;
+}
+
+.VGVSubPagina h2 a {
+  font-size: 1.7vw;
+  color: black;
 }
 
 .OrangeButton {
@@ -370,8 +388,16 @@ main h1 {
 }
 
 .ContactForm {
-  margin: 25vw;
-  background-color: rgb(199, 199, 199);
+  margin: 10vw 20vw;
+  padding: 2vw;
+  background-color: rgb(233, 233, 233);
+  border: black 0.1vw solid;
+  border-radius: 1vw;
+}
+
+.ContactForm textarea {
+  max-width: 37vw;
+  max-height: 30vw;
 }
 
 .OntdekLiImg {
