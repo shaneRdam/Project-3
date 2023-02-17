@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 17 feb 2023 om 10:12
+-- Gegenereerd op: 17 feb 2023 om 10:20
 -- Serverversie: 10.4.25-MariaDB
 -- PHP-versie: 8.1.10
 
@@ -209,7 +209,8 @@ INSERT INTO `reviews` (`ID`, `Product_ID`, `Naam`, `Email`, `Sterren`, `Datum`, 
 
 CREATE TABLE `winkelwagen` (
   `Winkelwagen_ID` int(25) NOT NULL,
-  `Aantal` int(255) NOT NULL
+  `Aantal` int(255) NOT NULL,
+  `Product_ID` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
