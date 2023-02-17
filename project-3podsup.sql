@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 16 feb 2023 om 09:57
--- Serverversie: 10.4.27-MariaDB
--- PHP-versie: 8.2.0
+-- Gegenereerd op: 17 feb 2023 om 10:12
+-- Serverversie: 10.4.25-MariaDB
+-- PHP-versie: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `accounts` (
   `ID` int(3) NOT NULL,
   `Email` varchar(20) NOT NULL,
   `Password` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `accounts`
@@ -59,7 +59,7 @@ CREATE TABLE `contact` (
   `Onderwerp` varchar(999) NOT NULL,
   `Beschrijving` varchar(999) NOT NULL,
   `Datum` varchar(699) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `contact`
@@ -83,7 +83,7 @@ CREATE TABLE `producten` (
   `Prijs` varchar(999) NOT NULL,
   `Aantal` varchar(999) NOT NULL,
   `Beschrijving` varchar(999) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `producten`
@@ -187,7 +187,7 @@ CREATE TABLE `reviews` (
   `Sterren` int(1) NOT NULL,
   `Datum` varchar(999) NOT NULL,
   `Beschrijving` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `reviews`
@@ -200,6 +200,17 @@ INSERT INTO `reviews` (`ID`, `Product_ID`, `Naam`, `Email`, `Sterren`, `Datum`, 
 (4, 6, 'Piet', 'sam.pieter@yahoo.com', 4, '2023-02-13 16:59:31', 'Best een goed product'),
 (5, 5, 'Steve E', 'test@gstar.su', 4, '2023-02-13 19:56:27', 'Goede prijs kwaliteit verhouding'),
 (6, 2, 'Bob', 'Bob.wit@email.com', 4, '2023-02-16 08:36:29', 'goed');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `winkelwagen`
+--
+
+CREATE TABLE `winkelwagen` (
+  `Winkelwagen_ID` int(25) NOT NULL,
+  `Aantal` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -230,6 +241,12 @@ ALTER TABLE `reviews`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexen voor tabel `winkelwagen`
+--
+ALTER TABLE `winkelwagen`
+  ADD PRIMARY KEY (`Winkelwagen_ID`);
+
+--
 -- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
@@ -256,6 +273,12 @@ ALTER TABLE `producten`
 --
 ALTER TABLE `reviews`
   MODIFY `ID` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT voor een tabel `winkelwagen`
+--
+ALTER TABLE `winkelwagen`
+  MODIFY `Winkelwagen_ID` int(25) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

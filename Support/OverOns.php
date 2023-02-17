@@ -11,6 +11,11 @@
 <body>
 <?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+<div class="GezondheidHeader">
+    <h1>
+    Over pods up®
+    </h1>
+</div>
 <div class="Maintext">
     <br><br>
 <section>

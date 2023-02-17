@@ -10,19 +10,33 @@
 </head>
 <body>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+<div class="DuurzaamheidHeader">
+  <div>
+  <h1>Duurzaamheid.</h1>
+</div>
+</div>
 <div class="Maintext">
 
-<section>
+<section class="DuurzaamheidFlex">
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=Ij2fmEDcL9U&ab_channel=airup">
+</iframe>
+  <div>
     <h1>
     sustainability by design
     </h1>
     <p>
     Lena Jüngst & Tim Jäger hebben air up® samen opgericht om mensen te helpen om duurzamer en gezonder te leven. Wij noemen het 'sustainability by design'.
     </p>
+    </div>
     <br><br>
 </section>
 
-<section>
+<section class="DuurzaamheidFlexR">
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=Ij2fmEDcL9U&ab_channel=airup">
+</iframe>
+  <div>
     <h1>
     Wie, wat, waar en waarheen
     </h1>
@@ -30,20 +44,30 @@
     Durzaamheid is nooit perfect. Waarom? het is namelijk een reis, geen doel.
     <br>
     We zijn bij Pods up zeker ook nog niet perfect, maar zoeken wel voortdurend nieuwe manieren om onszelf te verbeteren.
+    </div>
     <br><br>
 </section>
 
-<section>
+<section class="DuurzaamheidFlex">
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=Ij2fmEDcL9U&ab_channel=airup">
+</iframe>
+  <div>
     <h1>
     Gebruik en recycling van Pods
     </h1>
     <p>
     Je kunt onze pods makkelijk verwisselen en weggooien. 
     Heb je na een liter al zin in een andere smaak? Stop je Pod in de doorzichtige case terug in het afsluitbare zakje, sluit het af en pak een nieuwe pod.
+    </div>
     <br><br>
 </section>
 
-<section>
+<section class="DuurzaamheidFlexR">
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=Ij2fmEDcL9U&ab_channel=airup">
+</iframe>
+  <div>
     <h1>
     Waarom kraanwater?
     </h1>
@@ -54,6 +78,7 @@
         <li>Het kan plastic wegwerpflessen vervangen, wat weer betekent dat er minder zware vrachtwagens met water de weg op hoeven.</li>
         <li>Zo wordt elke kraan met veilig drinkwater een air up® vulstation.</li>
     </ul>
+    </div>
     <br><br>
 </section>
 
