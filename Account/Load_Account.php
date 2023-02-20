@@ -36,14 +36,14 @@ try {
 
     $result = $stmt->fetchAll();
 
-    echo "<table>";
-    foreach($result as $row) {
-        echo "<tr>" . 
-        "<td>".$row['ID']."</td>" . 
-        "<td>" .$row['Email']."<td>" . 
-        "<td>".$row['Password']."<td>" . "</tr><br>";
-    }
-    echo "</table>";
+    // echo "<table>";
+    // foreach($result as $row) {
+    //     echo "<tr>" . 
+    //     "<td>".$row['ID']."</td>" . 
+    //     "<td>" .$row['Email']."<td>" . 
+    //     "<td>".$row['Password']."<td>" . "</tr><br>";
+    // }
+    // echo "</table>";
 
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
@@ -57,3 +57,8 @@ $conn = null;
         border: solid 1px black
     }
 </style>
+
+<?php
+  // Redirect to the product page
+  echo "<script>window.location.href = '/Project-3/Account/Account.php';</script>";
+?>

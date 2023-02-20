@@ -42,12 +42,15 @@ if ($conn->query($sql) === TRUE) {
 }
 
 // Assign $_POST values to variables
-$email = $_POST["uname"];
+if (isset($_POST['uname']) && isset($_POST['email']) && isset($_POST['password'])) {
+$uname = $_POST["uname"];
+$email = $_POST["email"];
 $password = $_POST["password"];
+}
 
 // Insert data into table
-$sql = "INSERT INTO accounts (email, password)
-VALUES ('$email', '$password')";
+$sql = "INSERT INTO accounts (username ,email, password)
+VALUES ('$uname','$email', '$password')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
@@ -58,12 +61,13 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 ?>
 
-
-
-
-
 <style>
     table, tr ,td {
         border: solid 1px black
     }
 </style>
+
+<?php
+  // Redirect to the product page
+  echo "<script>window.location.href = '/Project-3/Account/Account.php';</script>";
+?>
