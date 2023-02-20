@@ -6,7 +6,7 @@
   </head>
 <body>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
-<div class="Maintext">
+<div class="MaintextAccount">
 
 <br><br><br>
 
