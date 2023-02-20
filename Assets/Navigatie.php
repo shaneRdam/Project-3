@@ -61,7 +61,7 @@
 }
 
 nav {
-    margin: 0 30vw;
+    margin: 0 32vw;
     margin-bottom: 2vw;
     background-color: rgb(218, 218, 218);
     border-radius: 25vh;

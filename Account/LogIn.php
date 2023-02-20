@@ -11,8 +11,14 @@
 <br><br><br>
 
 <form action="Load_Account.php" method="post">
+<?php
+if (isset($error)) {
+    // display the error message
+    echo '<p class="error-message">' . $error . '</p>';
+}
+?>
   <label for="fname">Username:</label><br>
-  <input type="email" id="fname" class="InputCapslock" name="uname" placeholder="Firstname.Lastname@email.com" value=""><br>
+  <input type="email" id="fname" class="InputCapslock" name="email" placeholder="Firstname.Lastname@email.com" value=""><br>
   <label for="lname">Password:</label><br>
   <input type="password" id="myInput" class="InputCapslock" name="password" placeholder="Password" value="">
   <input type="checkbox" onclick="TogglePassword()">Show Password

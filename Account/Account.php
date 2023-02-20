@@ -5,8 +5,20 @@
     <link rel="stylesheet" href="/Project-3/MainStylesheet.css">
     <link rel="stylesheet" href="/Project-3/Account/AccountStylesheet.css">
   </head>
-  <?php 
-  $CurrentAccount_ID = 0
+  <?php
+session_start();
+if (isset($_SESSION['account_id'])) {
+  $CurrentAccount_ID = $_SESSION['account_id'];
+} else {
+  // Redirect to the login page if the account ID is not set
+  header('Location: /Project-3/Account/Login.php');
+  exit;
+}
+
+
+// user is logged in, so get the Account_ID from the session
+// $CurrentAccount_ID = $_SESSION["Account_ID"] - 1;
+
   ?>
   <?php
 function GetPic() {
@@ -31,11 +43,12 @@ function GetPic() {
           <button class="tablinks active" onclick="openCity(event, 'Account')">Account</button>
           <button class="tablinks" onclick="openCity(event, 'Overzicht')">Overzicht</button>
           <button class="tablinks" onclick="openCity(event, 'Reviews')">Reviews</button>
+          <button class="tablinks" onclick="openCity(event, 'Settings')">Settings</button>
           <button class="tablinks">Uitloggen</button>
         </div>
 
         <div id="Account" class="tabcontent">
-          <h1>Welkom terug (gebruiksnaam van account)</h1>
+          <h1>Welkom terug <?php echo $Account_Username[$CurrentAccount_ID] ?>!</h1>
           <p>(text over account)</p>
           <br>
 
@@ -50,6 +63,11 @@ function GetPic() {
 
         <div id="Reviews" class="tabcontent">
           <h1>Reviews</h1>
+          <!-- <p></p> -->
+        </div>
+
+        <div id="Settings" class="tabcontent">
+          <h1>Settings</h1>
           <!-- <p></p> -->
         </div>
       </div>
