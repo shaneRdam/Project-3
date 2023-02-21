@@ -155,3 +155,14 @@
           margin-top: 0;
         }
       }
+  
+    
+.error-message {
+  color: white;
+  background-color: rgb(255, 70, 19);
+  border: solid rgb(202, 25, 25) 0.3vw;
+  border-radius: 2vw;
+  width: 100%;
+  padding: 1.2vw 0.3vw;
+  text-align: center;
+}

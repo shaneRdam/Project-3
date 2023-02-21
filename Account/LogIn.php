@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel="stylesheet" href="/Project-3/Stylesheet.css">
   <link rel="stylesheet" href="/Project-3/MainStylesheet.css">
   <link rel="stylesheet" href="/Project-3/Account/AccountStylesheet.css">
   </head>

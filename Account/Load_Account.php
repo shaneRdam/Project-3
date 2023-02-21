@@ -56,7 +56,7 @@ for ($i=0; $i < count($Account_ID); $i++) {
         echo "<br>Not Valid<br>";
     }
 }
-echo "<script>window.location.href = '/Project-3/Account/Account.php?error=1';</script>";
+echo "<script>window.location.href = '/Project-3/Account/LogIn.php?error=1';</script>";
 }
 
 // // Redirect to the product page

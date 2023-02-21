@@ -1,5 +1,6 @@
 <?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
 <?php 
+    session_start();
     $CurrentID = 3;
 echo "
     <script>
@@ -45,11 +46,18 @@ echo "
 
     <h2>Beschrijving</h2>
     <input type='text' name='Beschrijving' required>
-    <input type='submit'>
-</form>
-
     <br><br>
-";
+    ";
+if (isset($_SESSION['account_id'])) {
+    echo "<input type='submit'>";
+}
+else {
+  echo "<input type='button' value='U moet in gelogd zijn'>";
+}
+echo "
+</form>
+<br><br>";
+
 ?>
 
 <div class="ReviewTabelFlex">
