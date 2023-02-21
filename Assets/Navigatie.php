@@ -33,7 +33,7 @@
     </div>
     </nav>
     <div class="HeaderDiv">
-            <a href="/Project-3/Account/LogIn.php"><i class="fa fa-user-circle Fa-Icon" style="font-size:2.5vw"></i></a>
+            <a href="/Project-3/Account/Load_Account.php"><i class="fa fa-user-circle Fa-Icon" style="font-size:2.5vw"></i></a>
             <a href="/Project-3/WinkelPagina/WinkelWagen.php"><li class="fa fa-shopping-cart Fa-Icon" style="font-size:2.5vw"></li></a>
         </div>
     </body>
@@ -63,7 +63,6 @@
 nav {
     margin: 0 32vw;
     margin-bottom: 2vw;
-    background-color: rgb(218, 218, 218);
     border-radius: 25vh;
     height: 7.3vh;
     width: 35vw;
@@ -109,6 +108,11 @@ nav a:hover {
 
 .HeaderDiv {
     float: right;
+}
+
+.HeaderDiv, nav {
+    background-color: rgb(245, 245, 245);
+    border: black 0.05vw solid;
 }
 
 .SecondNav {

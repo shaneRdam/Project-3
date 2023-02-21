@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (isset($_SESSION['account_id'])) {
+  $CurrentAccount_ID = (int)$_SESSION['account_id'] ;
+} else {
+  // Redirect to the login page if the account ID is not set
+  header('Location: /Project-3/Account/Login.php');
+  exit;
+}
+  ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,21 +16,7 @@
     <link rel="stylesheet" href="/Project-3/MainStylesheet.css">
     <link rel="stylesheet" href="/Project-3/Account/AccountStylesheet.css">
   </head>
-  <?php
-session_start();
-if (isset($_SESSION['account_id'])) {
-  $CurrentAccount_ID = $_SESSION['account_id'];
-} else {
-  // Redirect to the login page if the account ID is not set
-  header('Location: /Project-3/Account/Login.php');
-  exit;
-}
 
-
-// user is logged in, so get the Account_ID from the session
-// $CurrentAccount_ID = $_SESSION["Account_ID"] - 1;
-
-  ?>
   <?php
 function GetPic() {
   global $Account_Foto;
@@ -31,6 +28,14 @@ function GetPic() {
     return "/Project-3/Assets/Video_Assets/Image/AccountDefaultProfilePic.png";
   }
 }
+
+// function PHPUitloggen() {
+//   // unset($_SESSION['account_id']);
+//   // session_destroy();
+
+//   echo "<script>window.location.href = '/Project-3/Account/Account.php';</script>";
+//   header('Location: /Project-3/Account/Login.php');
+// }
 ?>
   <body>
   <?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
@@ -44,7 +49,15 @@ function GetPic() {
           <button class="tablinks" onclick="openCity(event, 'Overzicht')">Overzicht</button>
           <button class="tablinks" onclick="openCity(event, 'Reviews')">Reviews</button>
           <button class="tablinks" onclick="openCity(event, 'Settings')">Settings</button>
-          <button class="tablinks">Uitloggen</button>
+
+          <?php
+          if($Account_ID[$CurrentAccount_ID] == 1) {
+            // echo "<button class='tablinks' onclick='openCity(event, 'AdminTools') '>AdminTools</button>";
+            include '/Xampp/htdocs/Project-3/Assets/AdminTools.php';
+          }
+          ?>
+          
+          <button class="tablinks" onclick="location.href='/Project-3/Account/LogOut.php'">Uitloggen</button>
         </div>
 
         <div id="Account" class="tabcontent">
@@ -70,6 +83,17 @@ function GetPic() {
           <h1>Settings</h1>
           <!-- <p></p> -->
         </div>
+        
+        <?php
+          if($Account_ID[$CurrentAccount_ID] == 1) {
+            echo "
+            <div id='AdminTools' class='tabcontent'>
+            <h1>AdminTools</h1>
+            <!-- <p></p> -->
+          </div>
+            ";
+          }
+          ?>
       </div>
     </div>
 
@@ -93,6 +117,7 @@ function GetPic() {
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active2", "");
   }
 
   // Show the current tab, and add an "active" class to the link that opened the tab
@@ -101,5 +126,6 @@ function GetPic() {
   evt.currentTarget.className += " active";
 }
 openCity(event, 'Account');
+
 </script>
 </html>

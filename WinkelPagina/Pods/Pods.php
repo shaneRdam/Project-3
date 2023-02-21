@@ -11,6 +11,17 @@
 <body>
 <?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+
+<div class="ProductDiv">
+<main class="ProductGradient two">
+      <div>
+        <h1>
+        Pods.
+</h1>
+</div>
+</main>
+</div>
+
 <div class="Maintext">
     
 <div>
@@ -20,6 +31,7 @@
      </form>
 </div>
 
+<h1>Ontdek onze collecties</h1>
 <table class="FlessenTable">
         <?php for ($i = 0; $i < count($Product_ID) ; $i++) { 
     if ($Product_Soort[$i] == "Pods") {
@@ -32,6 +44,8 @@
         <p>
         $Product_Beschrijving[$i]
         </p>
+        "; echo include '/Xampp/htdocs/Project-3/Assets/ToevoegenWinkelwagenButton.php'; 
+        $ID = $Product_ID[$i]; echo"
     </div>
     <div>
     <h1>

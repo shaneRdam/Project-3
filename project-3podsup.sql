@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 17 feb 2023 om 10:20
+-- Gegenereerd op: 21 feb 2023 om 13:27
 -- Serverversie: 10.4.25-MariaDB
 -- PHP-versie: 8.1.10
 
@@ -29,18 +29,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `accounts` (
   `ID` int(3) NOT NULL,
+  `Username` varchar(50) NOT NULL,
   `Email` varchar(20) NOT NULL,
-  `Password` varchar(25) NOT NULL
+  `Password` varchar(25) NOT NULL,
+  `Foto` varchar(999) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `accounts`
 --
 
-INSERT INTO `accounts` (`ID`, `Email`, `Password`) VALUES
-(1, 'Admin@Admin.com', 'Password'),
-(2, 'John@email.com', 'Doe'),
-(3, 'n.e@emial.com', '12345');
+INSERT INTO `accounts` (`ID`, `Username`, `Email`, `Password`, `Foto`) VALUES
+(1, 'Admin', 'Admin@Admin.com', '123', ''),
+(2, 'steve', 'steve@e.com', '45', ''),
+(3, 'John', 'john@email.com', 'zws', ''),
+(4, 'zo', 'zo.zo@yahoo.com', 'wacht', '');
 
 -- --------------------------------------------------------
 
@@ -255,7 +258,7 @@ ALTER TABLE `winkelwagen`
 -- AUTO_INCREMENT voor een tabel `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT voor een tabel `contact`

@@ -29,6 +29,23 @@ main h1 {
   margin-left: 1.5vw;
 }
 
+.ProductGradient, .ProductGradient div {
+  min-height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 25vw;
+  box-shadow: none;
+}
+
+.ProductDiv .one, .ProductDiv .two, .ProductDiv .three {
+  background-size: 45%;
+}
+
+.ProductDiv .one {background-image: url("https://nl.air-up.com/_ipx/f_webp,w_1800,q_75/https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Ff07fb4ba10994058bfc8e0ea7ae07e70%252F960d46de848e40bb85a79c2c936f6494");}
+.ProductDiv .two {background-image: url("https://nl.air-up.com/_ipx/f_webp,w_1800,q_75/https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Ff07fb4ba10994058bfc8e0ea7ae07e70%252Fcff90b60e2c14a148dc81826fd9174ad");}
+.ProductDiv .three {background-image: url("https://nl.air-up.com/_ipx/f_webp,w_1800,q_75/https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Ff07fb4ba10994058bfc8e0ea7ae07e70%252F38393193d26a4e5b9a72075933964e27");}
+
 .StappenImages {
   display: flex;
   flex-direction: row;
@@ -485,6 +502,13 @@ figure {
 }
 
 /* OveronsPagina */
+.tablinkcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+
 /* Style tab links */
 .tablink {
   background-color: #555;
@@ -494,7 +518,8 @@ figure {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 25%;
+  width: 35vw;
+  border-radius: 5vw;
 }
 
 .tablink:hover {
@@ -536,9 +561,10 @@ figure {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
   border-bottom: black 0 solid;
   border-bottom-width: 0.12vw;
+  font-weight: bolder;
+  font-size: 1.4vw;
 }
 
 .content {
@@ -578,7 +604,7 @@ figure {
 
 .DuurzaamheidHeader {
   width: 100%;
-  height: 24vw;
+  height: 100%;
   background: linear-gradient(
     75deg,
     rgb(111,49,188) 0%,
@@ -586,20 +612,33 @@ figure {
     rgba(175, 238, 238, 0) 33%,
     rgba(175, 238, 238, 0) 100%
   );
+  z-index: 2;
   display: flex;
   align-items: end;
 }
 
-.Duurzaamheid div {
+.DuurzaamheidHeaderContainer {
+  background-size: 100%;
+  background-position-y: -12vw;
+  background-image: url("https://nl.air-up.com/_ipx/f_webp,w_1800,q_75/https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Ff4398d6259f245a0ab4b1b46057aba24%252F168c126eb6df40379d9273eeee93e2ac");
+  height: 28vw;
+  z-index: -1;
+}
+
+/* .Duurzaamheid div {
   background-image: url("https://nl.air-up.com/_ipx/f_webp,w_1800,q_75/https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252Ff4398d6259f245a0ab4b1b46057aba24%252F168c126eb6df40379d9273eeee93e2ac");
   width: 100%;
   height: 100%;
-}
+} */
 
 .DuurzaamheidHeader h1 {
   color: white;
   font-size: 2.5vw;
   margin-left: 2vw;
+}
+
+.DuurzaamheidCollapsible {
+  margin: 0 10vw;
 }
 
 /*Gezondheid pagina */

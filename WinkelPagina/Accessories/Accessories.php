@@ -11,6 +11,17 @@
 <body>
 <?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+
+<div class="ProductDiv">
+<main class="ProductGradient three">
+      <div>
+        <h1>
+        Accessoires.
+</h1>
+</div>
+</main>
+</div>
+
 <div class="Maintext">
 
 <div>
@@ -20,6 +31,10 @@
      </form>
 </div>
 
+<h1>Customise met accessoires.</h1>
+
+<br><br>
+<h2>Past op alle air up® flessen.</h2>
 <table class="FlessenTable">
     <tr>
         <td>
@@ -39,6 +54,8 @@
         <p>
         $Product_Beschrijving[$i]
         </p>
+        "; echo include '/Xampp/htdocs/Project-3/Assets/ToevoegenWinkelwagenButton.php';
+        $ID = $Product_ID[$i]; echo"
     </div>
     <div>
     <h1>

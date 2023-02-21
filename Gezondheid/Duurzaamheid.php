@@ -10,12 +10,16 @@
 </head>
 <body>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+
+<div class="DuurzaamheidHeaderContainer">
 <div class="DuurzaamheidHeader">
   <div>
-  <h1>Duurzaamheid.</h1>
+  <h1>duurzaamheid.</h1>
+</div>
 </div>
 </div>
 <div class="Maintext">
+
 
 <section class="DuurzaamheidFlex">
 <iframe width="420" height="315"
@@ -83,7 +87,8 @@ src="https://www.youtube.com/watch?v=Ij2fmEDcL9U&ab_channel=airup">
 </section>
 
 <br><br><br>
-
+<div class="DuurzaamheidCollapsible">
+<h1>Laten we het hebben over strategie.</h1>
 <button class="collapsible">
   <span class="icon">&#9660;</span>
   Is mijn kraanwater drinkbaar?
@@ -183,7 +188,7 @@ Dankzij deze mijlpalen zullen we tegen eind 2023 ongeveer 90% van onze Pods en d
 De weg vooruit is niet altijd recht. Bij air up® willen we de juiste weg bewandelen, hoe vaak we ook vallen en hoeveel planning het ook kost. We zijn zeker niet perfect, maar je kunt erop rekenen dat we onophoudelijk streven naar verbetering en je meenemen op deze reis.
 </p>
 </div>
-
+</div>
         </div>
 
 

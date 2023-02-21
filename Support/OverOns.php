@@ -21,8 +21,10 @@
 <section>
     <h1>Over ons</h1>
 </section>
-<button class="tablink" onclick="openPage('Bedrijf', this, 'red')" id="defaultOpen">Bedrijf</button>
-<button class="tablink" onclick="openPage('Personeel', this, 'green')">Personeel</button>
+<div class="tablinkcontainer">
+<button class="tablink" onclick="openPage('Bedrijf', this, 'purple')" id="defaultOpen">Bedrijf</button>
+<button class="tablink" onclick="openPage('Personeel', this, 'purple')">Personeel</button>
+</div>
 
 <div id="Bedrijf" class="tabcontent">
   <h3>Bedrijf</h3>

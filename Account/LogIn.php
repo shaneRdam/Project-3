@@ -12,11 +12,11 @@
 
 <form action="Load_Account.php" method="post">
 <?php
-if (isset($error)) {
-    // display the error message
-    echo '<p class="error-message">' . $error . '</p>';
-}
-?>
+          if (isset($_GET['error'])) {
+              // display the error message
+              echo '<p class="error-message">Incorrect email or password</p>';
+          }
+        ?>
   <label for="fname">Username:</label><br>
   <input type="email" id="fname" class="InputCapslock" name="email" placeholder="Firstname.Lastname@email.com" value=""><br>
   <label for="lname">Password:</label><br>

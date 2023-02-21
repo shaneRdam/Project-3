@@ -11,8 +11,18 @@
 <body>
 <?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
 <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
-<div class="Maintext">
 
+<div class="ProductDiv">
+<main class="ProductGradient one">
+      <div>
+        <h1>
+        Waterflessen.
+</h1>
+</div>
+</main>
+</div>
+
+<div class="Maintext">
 <div>
 <form action="/Project-3/WinkelPagina/ZoekProductPagina.php" method="post">
      <input class="ZoekProductText" type="text" name="ZoekProductText" placeholder="Zoek hier voor alle onze producten." >
@@ -20,8 +30,8 @@
      </form>
 </div>
 
-<table class="FlessenTable">
-    <tr>
+<table>
+<tr>
         <td>
             <h1>Stalen flessen voor cool water</h1>
             <p>
@@ -29,6 +39,8 @@
             </p>
         </td>
     </tr>
+</table>
+<table class="FlessenTable">
     <tr>
         <?php echo "
     <a class='ProductLinks' href='/Project-3/WinkelPagina/ProductPagina.php?id=0'>
@@ -39,6 +51,8 @@
         <p>
         $Product_Beschrijving[0]
         </p>
+        "; echo include '/Xampp/htdocs/Project-3/Assets/ToevoegenWinkelwagenButton.php';
+        $ID = $Product_ID[0]; echo"
     </div>
     <div>
     <h1>
@@ -59,6 +73,8 @@
                 <p>
                 $Product_Beschrijving[1]
                 </p>
+                "; echo include '/Xampp/htdocs/Project-3/Assets/ToevoegenWinkelwagenButton.php';
+                $ID = $Product_ID[1]; echo"
             </div>
             <div>
             <h1>
@@ -74,14 +90,16 @@
     </tr>
 </table>
 
-<table class="FlessenTable">
-    <tr>
+<table>
+<tr>
         <td>
             <h1>
             Onze originele flessen
             </h1>
         </td>
     </tr>
+</table>
+<table class="FlessenTable">
     <?php for ($i = 0; $i < count($Product_ID) ; $i++) { 
     if ($i > 1 && $Product_Soort[$i] == "Fles") {
     echo "
@@ -93,6 +111,8 @@
         <p>
         $Product_Beschrijving[$i]
         </p>
+        "; echo include '/Xampp/htdocs/Project-3/Assets/ToevoegenWinkelwagenButton.php';
+        $ID = $Product_ID[$i]; echo"    
     </div>
     <div>
     <h1>
