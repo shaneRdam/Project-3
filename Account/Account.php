@@ -19,15 +19,20 @@ if (isset($_SESSION['account_id'])) {
 
   <?php
 function GetPic() {
-  global $Account_Foto;
+  global $Account_Foto_Type;
+  global $Account_Foto_Data;
   global $CurrentAccount_ID;
-  if(strlen($Account_Foto[$CurrentAccount_ID]) > 0) {
-    return $Account_Foto;
-  }
-  else {
+  global $Account_Foto;
+
+  $foto = $Account_Foto[$CurrentAccount_ID];
+
+  if ($foto) {
+    return 'data:' . $Account_Foto_Type[$CurrentAccount_ID] . ';base64,' . base64_encode($foto);
+  } else {
     return "/Project-3/Assets/Video_Assets/Image/AccountDefaultProfilePic.png";
   }
 }
+
 
 // function PHPUitloggen() {
 //   // unset($_SESSION['account_id']);
@@ -76,7 +81,7 @@ function GetPic() {
         <div id="Reviews" class="tabcontent">
           <h1>Reviews</h1>
           <div>
-            <h1>Laaste reviews</h1>
+            <h2>Laaste reviews:</h2>
             <div class="ReviewTabelFlex">
     <?php
     for ($i = 0 ; $i < count($Reviews_ID); $i++) { 
@@ -107,7 +112,13 @@ function GetPic() {
 
         <div id="Settings" class="tabcontent">
           <h1>Settings</h1>
-          <!-- <p></p> -->
+          <div>
+          <form action="AccountSettings/Foto_Insert.php" method="post">
+  <label for="file">Choose a file:</label>
+  <input type="file" name="file" id="file"><br>
+  <input type="submit" value="Upload" name="submit">
+</form>
+          </div>
         </div>
         
         <?php
@@ -151,7 +162,14 @@ function GetPic() {
   document.getElementById(Name).className += " active2";
   evt.currentTarget.className += " active";
 }
-openCity(event, 'Account');
+<?php 
+if(isset($_GET['page'])) {
+  echo "openCity(event, '". $_GET['page'] ."');";
+}
+else {
+  echo "openCity(event, 'Account');";
+}
+?>
 
 </script>
 <style>

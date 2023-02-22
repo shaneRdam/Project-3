@@ -1,3 +1,7 @@
+<?php 
+if(session_status() !== PHP_SESSION_ACTIVE) {session_start();}
+?>
+
 <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,8 +37,23 @@
     </div>
     </nav>
     <div class="HeaderDiv">
-            <a href="/Project-3/Account/Load_Account.php"><i class="fa fa-user-circle Fa-Icon" style="font-size:2.5vw"></i></a>
-            <a href="/Project-3/WinkelPagina/WinkelWagen.php"><li class="fa fa-shopping-cart Fa-Icon" style="font-size:2.5vw"></li></a>
+
+            <div class="dropdown" onclick="location.href='/Project-3/Account/Load_Account.php'">
+            <button class="dropbtn"><i class="fa fa-user-circle Fa-Icon" style="font-size:2.5vw"></i></button>
+            <?php if (isset($_SESSION['account_id'])) {
+                echo '
+                <div class="dropdown-content">
+                <div class="dropdown-content2">
+                  <a href="/Project-3/Account/Load_Account.php?page=Overzicht">Overzicht</a>
+                  <a href="/Project-3/Account/Load_Account.php?page=Reviews">Reviews</a>
+                  <a href="/Project-3/Account/Load_Account.php?page=Settings">Settings</a>
+                  <a href="/Project-3/Account/LogOut.php">Uitloggen</a>
+              </div>
+                </div>
+                ';
+                } ?>
+</div>
+            <button class="dropbtn" onclick="location.href='/Project-3/WinkelPagina/WinkelWagen.php'"><li class="fa fa-shopping-cart Fa-Icon" style="font-size:2.5vw"></li></button>
         </div>
     </body>
 
@@ -170,6 +189,53 @@ nav {
   transition: top 0.7s;
 }
 
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  background-color: inherit;
+}
+
+.dropbtn:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 5vw;
+  padding-top: 1vw;
+  background-color: inherit;
+  right: 0;
+}
+
+.dropdown-content2 {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 10vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  border-radius: 2vw;
+  padding: 2vw 0vw;
+  text-align: right;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content2 {display: block;}
     </style>
     <script>
 const navbar = document.querySelector('nav');

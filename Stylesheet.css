@@ -509,6 +509,10 @@ figure {
   width: 100%;
 }
 
+.OverOnstext div h2 {
+  font-size: 1.5vw;
+}
+
 /* Style tab links */
 .tablink {
   background-color: #555;

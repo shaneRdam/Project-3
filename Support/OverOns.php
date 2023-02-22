@@ -16,7 +16,7 @@
     Over pods up®
     </h1>
 </div>
-<div class="Maintext">
+<div class="Maintext OverOnstext">
     <br><br>
 <section>
     <h1>Over ons</h1>
@@ -52,7 +52,7 @@ Een oplossing die voldoet aan de hoge eisen van onze generatie, omdat we niet wi
 </div>
 
 <div>
-    <h1>Cool product, cool team!</h1>
+    <h2>Cool product, cool team!</h2>
     <p>
     Er is zoveel gebeurd sinds we dit avontuur begonnen. 
     Ons team van vijf oprichters is intussen gegroeid tot een succesvolle start-up met getalenteerde mensen uit de hele wereld. 
@@ -155,7 +155,17 @@ Een oplossing die voldoet aan de hoge eisen van onze generatie, omdat we niet wi
 
 <div id="Personeel" class="tabcontent">
   <h3>Personeel</h3>
-  <p>Some news this fine day!</p>
+  <p>(text)</p>
+  <br>
+  <div>
+    <img>
+    <h1>
+
+    </h1>
+    <p>
+        
+    </p>
+  </div>
 </div>
 
         </div>
