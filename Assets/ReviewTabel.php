@@ -1,6 +1,5 @@
 <?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
 <?php 
-    session_start();
     $CurrentID = 3;
 echo "
     <script>
@@ -29,11 +28,19 @@ echo "
     <h1>Laat zelf een review achter over dit product!</h1>
     <form action='/Project-3/Assets/Database/Create_Review.php?id=$CurrentID' method='post'>
     <h2>Naam</h2>
-    <input type='text' name='Naam' required>
+    <input type='text' name='Naam' required value='";
+    if (isset($_SESSION['account_id'])) {
+      echo $Account_Username[(int)$_SESSION['account_id']];
+    }
+    echo"'>
     <br>
 
     <h2>Email</h2>
-    <input type='email' name='Email' required>
+    <input type='email' name='Email' required value='";
+    if (isset($_SESSION['account_id'])) {
+      echo $Account_Email[(int)$_SESSION['account_id']];
+    }
+    echo"'>
     <h2 value='$CurrentID'></h2>
 
     <h2>Sterrenrating</h2>

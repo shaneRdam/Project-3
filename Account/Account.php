@@ -71,12 +71,38 @@ function GetPic() {
 
         <div id="Overzicht" class="tabcontent">
           <h1>Overzicht</h1>
-          <!-- <p></p> -->
         </div>
 
         <div id="Reviews" class="tabcontent">
           <h1>Reviews</h1>
-          <!-- <p></p> -->
+          <div>
+            <h1>Laaste reviews</h1>
+            <div class="ReviewTabelFlex">
+    <?php
+    for ($i = 0 ; $i < count($Reviews_ID); $i++) { 
+        if($Reviews_Account_ID[$i] == $CurrentAccount_ID ) {
+          $Product = $Product_ID[$i];
+            echo 
+            "
+            <div class='ReviewTabelElement'>
+            Deze review is gemaakt op $Reviews_Datum[$i]<br>
+            Op dit product: <strong>$Product_Naam[$Product]</strong>
+            <br>
+            <div>
+                <h1>$Reviews_Naam[$i]</h1><h3>$Reviews_Email[$i]</h3>
+                <br><h3>$Reviews_Sterren[$i] Sterren</h3>
+                <p>
+                $Reviews_Beschrijving[$i]
+                </p>
+        </div>
+        </div>
+        <br>
+            ";
+        }
+    }
+    ?>
+    </div>
+    </div>
         </div>
 
         <div id="Settings" class="tabcontent">
@@ -128,4 +154,35 @@ function GetPic() {
 openCity(event, 'Account');
 
 </script>
+<style>
+  /* Account reviews */
+.ReviewTabelFlex {
+  display: flex;
+  flex-direction: column-reverse;
+}
+      
+.ReviewTabelElement {
+  background-color: #fcfcfc;
+  border: solid 0.1vw black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1vw;
+  padding: 2vw;
+  min-width: 10vw;
+  width: 30vw;
+  float: left;
+}
+
+.ReviewTabelElement div, .ReviewTabelElement div p {
+  padding: 1vw;
+}
+
+.ReviewTabelElement h1 {
+  font-size: 1.5vw;
+}
+
+.ReviewTabelElement p {
+  border: black dotted 0.2vw;
+}
+</style>
 </html>

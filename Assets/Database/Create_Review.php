@@ -46,9 +46,14 @@
   $datum = date("Y-m-d H:i:s");
   $beschrijving = $_POST["Beschrijving"];
 
+  session_start();
+  if (isset($_SESSION['account_id'])) {
+    $account_id = (int)$_SESSION['account_id'];
+  } 
+
   // Insert the data into the database
-  $sql = "INSERT INTO reviews (ID, Product_ID, Naam, Email, Sterren, Datum, Beschrijving)
-  VALUES ('$next_review_id', '$product_id', '$naam', '$email', '$sterren', '$datum', '$beschrijving')";
+  $sql = "INSERT INTO reviews (ID, Product_ID, Account_ID, Naam, Email, Sterren, Datum, Beschrijving)
+  VALUES ('$next_review_id', '$product_id', '$account_id', '$naam', '$email', '$sterren', '$datum', '$beschrijving')";
 
   if ($conn->query($sql) === TRUE) {
     echo "Review added successfully";

@@ -166,3 +166,33 @@
   padding: 1.2vw 0.3vw;
   text-align: center;
 }
+
+/* Account reviews */
+.ReviewTabelFlex {
+  display: flex;
+  flex-direction: column-reverse;
+}
+      
+.ReviewTabelElement {
+  background-color: #fcfcfc;
+  border: solid 0.1vw black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1vw;
+  padding: 2vw;
+  min-width: 10vw;
+  width: 30vw;
+  float: left;
+}
+
+.ReviewTabelElement div, .ReviewTabelElement div p {
+  padding: 1vw;
+}
+
+.ReviewTabelElement h1 {
+  font-size: 1.5vw;
+}
+
+.ReviewTabelElement p {
+  border: black dotted 0.2vw;
+}

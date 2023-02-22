@@ -98,6 +98,7 @@ try {
     //Product array maken
     $Reviews_ID = [];
     $Reviews_Product_ID = [];
+    $Reviews_Account_ID = [];
     $Reviews_Naam = [];
     $Reviews_Email = [];
     $Reviews_Sterren = [];
@@ -107,6 +108,7 @@ try {
     foreach($result as $row) { //Database info toevoegen aan alle Arrays
         array_push($Reviews_ID, $row['ID']);
         array_push($Reviews_Product_ID, $row['Product_ID']);
+        array_push($Reviews_Account_ID, $row['Account_ID']);
         array_push($Reviews_Naam, $row['Naam']);
         array_push($Reviews_Email, $row['Email']);
         array_push($Reviews_Sterren, $row['Sterren']);

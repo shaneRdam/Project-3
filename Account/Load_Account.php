@@ -44,7 +44,7 @@ function Verify($email, $password) {
     global $Account_Password;
 for ($i=0; $i < count($Account_ID); $i++) { 
     if($Account_Email[$i] == $email &&  $Account_Password[$i] == $password) {
-        echo "<br>Valid<br>";
+        // echo "<br>Valid<br>";
         if(!isset($_SESSION['account_id'])) {
         $_SESSION['account_id'] = $Account_ID[$i] - 1;
         echo "Session set";
@@ -62,3 +62,4 @@ echo "<script>window.location.href = '/Project-3/Account/LogIn.php?error=1';</sc
 // // Redirect to the product page
 
 ?>
+
