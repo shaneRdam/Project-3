@@ -59,7 +59,7 @@ echo "
     <div>
     <img class="ProductPaginaImg" src="<?php echo $Product_Foto[$CurrentID] ?>">
     </div>
-    <div>
+    <div class="ProductPaginaFlex2">
     <h1 class="ProductPaginaNaam"><br>
     <?php echo $Product_Naam[$CurrentID] ?>
     </h1>
@@ -74,12 +74,30 @@ echo "
     <?php echo "Aantal: " . $Product_Aantal[$CurrentID] ?>
     </h2>
     <p>
-    <?php echo $Product_Beschrijving[$CurrentID] ?>
+      <ul>
+        <li>Verzenddagen: 2-4 dagen for NL (+1 voor BE)</li>
+        <li>Verzending: Slechts € 29,00 verwijderd van gratis verzending</li>
+      </ul>
     </p>
-    <?php include '/Xampp/htdocs/Project-3/Assets/ToevoegenWinkelwagenButton.php' ?>
-    <?php $ID = $CurrentID ?>
+    <form action="/Project-3/WinkelPagina/WinkelWagen.php" method="post">
+      <div class="ProductAantal">
+        <input type="button" value="-" onclick="Add(-1)">
+        <h2 name="aantal" id="AantalText">1</h2>
+        <input type="button" value="+" onclick="Add(1)">
+      </div>
+      <br>
+      <input type="submit" name="WinkelWagenSubmit" class="PurpleButton" value="<?php echo $CurrentID; ?>">
+      <label for="WinkelWagenSubmit">Toevoegen aan WinkelWagen</label>
+    </form>
+
     </div>
 </div>
+
+<p>
+<?php echo $Product_Beschrijving[$CurrentID] ?>
+<br><br>
+</p>
+
 <?php include '/Xampp/htdocs/Project-3/Assets/ReviewTabel.php' ?>
 <?php 
     function SterrenBerekenen() {
@@ -111,4 +129,16 @@ echo "
 
         <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
 </body>
+<script>
+  Aantal = 1;
+  function Add(number) {
+    Aantal = Aantal + parseInt(number);
+    if(Aantal > 0) {
+    document.getElementById("AantalText").textContent = Aantal;
+    }
+    else{
+      Aantal = 1;
+    }
+  }
+</script>
 </html>

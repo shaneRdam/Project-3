@@ -82,7 +82,7 @@ function Valid($ID) {
 
 
 
-<div class="Maintext">
+<div>
 
 <div>
     <div class="ZoekProductTextFlex">
@@ -108,8 +108,8 @@ function Valid($ID) {
     <input type="checkbox" id="Pods" value="Pods" name="Pods" <?php echo $CheckBoxPods ?>><label>Pods</label>
     <br>
     <input type="checkbox" id="Accessoires" value="Accessoires" name="Accessoires" <?php echo $CheckBoxAccessoires ?>><label>Accessoires</label>
-    <br>
-    <input type="submit" value="Submit">
+    <br><br>
+    <input type="submit" class="OrangeButton" value="Submit">
     </form>
 </div>
 <div class="ZoekPaginaResultaten">

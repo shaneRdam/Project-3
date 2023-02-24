@@ -25,8 +25,8 @@ echo "
     <?php
     echo "
     <!-- Review maken -->
-    <h1>Laat zelf een review achter over dit product!</h1>
-    <form action='/Project-3/Assets/Database/Create_Review.php?id=$CurrentID' method='post'>
+    <button class='OrangeButton' id='ReviewFormButton' onclick='ToggleReview()'>Review schrijven</button>
+    <form action='/Project-3/Assets/Database/Create_Review.php?id=$CurrentID' id='ReviewForm' method='post'>
     <h2>Naam</h2>
     <input type='text' name='Naam' required value='";
     if (isset($_SESSION['account_id'])) {
@@ -51,15 +51,18 @@ echo "
     <input type='radio' value='5' name='SterrenRating'> 5
     <br>
 
+    <h2>Titel</h2>
+    <input type='text' name='Titel' required>
+    <br>
     <h2>Beschrijving</h2>
     <input type='text' name='Beschrijving' required>
     <br><br>
     ";
 if (isset($_SESSION['account_id'])) {
-    echo "<input type='submit'>";
+    echo "<input type='button' value='Annuleren' onclick='ToggleReview()' class='OrangeButton'><input type='submit' class='OrangeButton'>";
 }
 else {
-  echo "<input type='button' value='U moet in gelogd zijn'>";
+  echo "<input type='button' value='U moet in gelogd zijn' onclick='ToggleReview()' class='OrangeButton'>";
 }
 echo "
 </form>
@@ -73,17 +76,19 @@ echo "
         if($Reviews_Product_ID[$i] == $CurrentID) {
             echo 
             "
+            <div class='ReviewTabelElementContainer'>
             <div class='ReviewTabelElement'>
+            <h1>$Reviews_Naam[$i]</h1>
             Deze review is gemaakt op $Reviews_Datum[$i]
-            <br>
-            <div>
-                <h1>$Reviews_Naam[$i]</h1><h3>$Reviews_Email[$i]</h3>
-                <br><h3>$Reviews_Sterren[$i] Sterren</h3>
-                <p>
-                $Reviews_Beschrijving[$i]
-                </p>
         </div>
-        </div>
+        <div class='ReviewTabelElement'>
+        <br><h3>$Reviews_Sterren[$i] Sterren</h3>
+        <h1>$Reviews_Titel[$i]</h1>
+        <p>
+        $Reviews_Beschrijving[$i]
+        </p>
+</div>
+</div>
         <br>
             ";
         }
@@ -92,21 +97,42 @@ echo "
     </div>
 
     <style>
+#ReviewForm {
+  display: none;
+}
+/* 
+#ReviewForm{
+  display: flex;
+  flex-direction: row;
+} */
+
 .ReviewTabelFlex {
   display: flex;
   flex-direction: column-reverse;
 }
+
+.ReviewTabelElementContainer {
+  border: solid 0.1vw black;
+  border-radius: 1vw;
+  padding: 2vw;
+  min-width: 100%;
+  width: 30vw;
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
       
 .ReviewTabelElement {
   background-color: #fcfcfc;
-  border: solid 0.1vw black;
   display: flex;
   flex-direction: column;
-  border-radius: 1vw;
-  padding: 2vw;
-  min-width: 10vw;
-  width: 30vw;
-  float: left;
+  margin: 0vw 2vw;
+}
+
+.ReviewTabelElement div {
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .ReviewTabelElement div, .ReviewTabelElement div p {
@@ -116,8 +142,17 @@ echo "
 .ReviewTabelElement h1 {
   font-size: 1.5vw;
 }
-
-.ReviewTabelElement p {
-  border: black dotted 0.2vw;
-}
     </style>
+    <script>
+      function ToggleReview() {
+        var Form = document.getElementById("ReviewForm")
+        if(Form.style.display == "block") {
+          Form.style.display = "none";
+          document.getElementById("ReviewFormButton").style.display = "block"
+        }
+        else {
+          Form.style.display = "block";
+          document.getElementById("ReviewFormButton").style.display = "none"
+        }
+      }
+    </script>

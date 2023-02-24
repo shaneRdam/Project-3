@@ -105,6 +105,7 @@ try {
     $Reviews_Email = [];
     $Reviews_Sterren = [];
     $Reviews_Datum = [];
+    $Reviews_Titel = [];
     $Reviews_Beschrijving = [];
 
     foreach($result as $row) { //Database info toevoegen aan alle Arrays
@@ -115,6 +116,7 @@ try {
         array_push($Reviews_Email, $row['Email']);
         array_push($Reviews_Sterren, $row['Sterren']);
         array_push($Reviews_Datum, $row['Datum']);
+        array_push($Reviews_Titel, $row['ReviewTitel']);
         array_push($Reviews_Beschrijving, $row['Beschrijving']);
 
     }

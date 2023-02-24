@@ -43,6 +43,7 @@
   $email = $_POST["Email"];
   $product_id = $CurrentID;
   $sterren = $_POST["SterrenRating"];
+  $titel = $_POST["Titel"];
   $datum = date("Y-m-d H:i:s");
   $beschrijving = $_POST["Beschrijving"];
 
@@ -52,8 +53,8 @@
   } 
 
   // Insert the data into the database
-  $sql = "INSERT INTO reviews (ID, Product_ID, Account_ID, Naam, Email, Sterren, Datum, Beschrijving)
-  VALUES ('$next_review_id', '$product_id', '$account_id', '$naam', '$email', '$sterren', '$datum', '$beschrijving')";
+  $sql = "INSERT INTO reviews (ID, Product_ID, Account_ID, Naam, Email, Sterren, ReviewTitel, Datum, Beschrijving)
+  VALUES ('$next_review_id', '$product_id', '$account_id', '$naam', '$email', '$sterren', '$titel', '$datum', '$beschrijving')";
 
   if ($conn->query($sql) === TRUE) {
     echo "Review added successfully";

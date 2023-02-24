@@ -430,6 +430,24 @@ figure {
   margin: 2vw;
 }
 
+.ProductAantal {
+  background-color: white;
+  border: black 0.1vw solid;
+  border-radius: 1vw;
+  max-width: 7vw;
+  max-height: 3vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.ProductAantal input {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
 .ProductPaginaFlex {
   display: flex;
   flex-direction: row;
@@ -437,8 +455,11 @@ figure {
   margin: 5vw 3vw;
 }
 
-.ProductPaginaFlex div {
-  background-color: rgb(226, 226, 226);
+.ProductPaginaFlex2 {
+  background-color: rgb(237, 237, 237);
+  padding: 2vw;
+  padding-top: 0;
+  border-radius: 2vw;
 }
 
 .ProductPaginaFlex h1 {
@@ -446,9 +467,12 @@ figure {
 }
 
 .ZoekProductFilters {
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(229, 229, 229);
   float: left;
   padding: 3vw 1.5vw;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  min-width: 20vw;
 }
 
 .ZoekProductText {
@@ -469,9 +493,9 @@ figure {
 
 .ZoekPaginaResultaten {
   background-color: #ffffff;
-  width: 100%;
   margin: 1.5vw;
   border-radius: 2vw;
+  width: 65vw;
 }
 
 .ZoekPaginaResultatenElement {

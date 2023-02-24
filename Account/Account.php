@@ -80,27 +80,30 @@ function GetPic() {
 
         <div id="Reviews" class="tabcontent">
           <h1>Reviews</h1>
-          <div>
+          <div></div>
             <h2>Laaste reviews:</h2>
-            <div class="ReviewTabelFlex">
+    <div class="ReviewTabelFlex">
     <?php
     for ($i = 0 ; $i < count($Reviews_ID); $i++) { 
-        if($Reviews_Account_ID[$i] == $CurrentAccount_ID ) {
+        if($Reviews_Account_ID[$i] == $CurrentAccount_ID) {
           $Product = $Product_ID[$i];
             echo 
             "
+            <div class='ReviewTabelElementContainer'>
             <div class='ReviewTabelElement'>
+            <h1>$Reviews_Naam[$i]</h1>
             Deze review is gemaakt op $Reviews_Datum[$i]<br>
             Op dit product: <strong>$Product_Naam[$Product]</strong>
             <br>
-            <div>
-                <h1>$Reviews_Naam[$i]</h1><h3>$Reviews_Email[$i]</h3>
-                <br><h3>$Reviews_Sterren[$i] Sterren</h3>
-                <p>
-                $Reviews_Beschrijving[$i]
-                </p>
         </div>
-        </div>
+        <div class='ReviewTabelElement'>
+        <br><h3>$Reviews_Sterren[$i] Sterren</h3>
+        <h1>$Reviews_Titel[$i]</h1>
+        <p>
+        $Reviews_Beschrijving[$i]
+        </p>
+</div>
+</div>
         <br>
             ";
         }
@@ -173,22 +176,33 @@ else {
 
 </script>
 <style>
-  /* Account reviews */
 .ReviewTabelFlex {
   display: flex;
   flex-direction: column-reverse;
 }
+
+.ReviewTabelElementContainer {
+  border: solid 0.1vw black;
+  border-radius: 1vw;
+  padding: 2vw;
+  min-width: 80%;
+  width: 30vw;
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
       
 .ReviewTabelElement {
   background-color: #fcfcfc;
-  border: solid 0.1vw black;
   display: flex;
   flex-direction: column;
-  border-radius: 1vw;
-  padding: 2vw;
-  min-width: 10vw;
-  width: 30vw;
-  float: left;
+  margin: 0vw 2vw;
+}
+
+.ReviewTabelElement div {
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .ReviewTabelElement div, .ReviewTabelElement div p {
@@ -198,9 +212,5 @@ else {
 .ReviewTabelElement h1 {
   font-size: 1.5vw;
 }
-
-.ReviewTabelElement p {
-  border: black dotted 0.2vw;
-}
-</style>
+    </style>
 </html>
