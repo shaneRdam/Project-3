@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php require '../DatabasePuller.php'; ?>
-<?php include '../../Assets/Navigatie.php';?>
+<?php include '../Assets/Navigatie.php';?>
 <?php 
     $CurrentID = 4;
 echo "
@@ -98,7 +98,7 @@ echo "
 <br><br>
 </p>
 
-<?php include '../../Assets/ReviewTabel.php' ?>
+<?php include '../Assets/ReviewTabel.php' ?>
 <?php 
     function SterrenBerekenen() {
       $TotalSterren = 0;
@@ -127,7 +127,7 @@ echo "
         </div>
 
 
-        <?php include '../../Assets/Footer.php';?>
+        <?php include '../Assets/Footer.php';?>
 </body>
 <script>
   Aantal = 1;
