@@ -113,10 +113,11 @@ function Valid($ID) {
     </form>
 </div>
 <div class="ZoekPaginaResultaten">
-    <h1>Resultaten</h1>
+    <h1>Resultaten: <?php echo GetResultaten() ?></h1>
 
     <?php for ($i = 0; $i < count($Product_ID) ; $i++) { 
     if (Valid($i)) {
+    $Valid_IDs = $Product_ID[$i];
     echo "
     <a class='ProductLinks' href='/Project-3/WinkelPagina/ProductPagina.php?id=$i'>
     <div class='ZoekPaginaResultatenElement'>
@@ -139,7 +140,12 @@ function Valid($ID) {
 </a>
     ";
 }
-} ?>
+} 
+function GetResultaten() {
+    global $Valid_IDs;
+    return $Valid_IDs;
+}
+?>
 
 </div>
 
