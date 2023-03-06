@@ -43,8 +43,8 @@ function GetPic() {
 // }
 ?>
   <body>
-  <?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
-    <?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+  <?php require '../DatabasePuller.php'; ?>
+    <?php include '../Assets/Navigatie.php';?>
 
     <div>
       <div class="AccountOverzicht">
@@ -138,7 +138,7 @@ function GetPic() {
     </div>
 
     <script src="../Account/App.js"></script>
-    <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
+    <?php include '../Assets/Footer.php';?>
 
 
 </body>

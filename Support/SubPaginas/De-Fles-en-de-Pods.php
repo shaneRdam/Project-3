@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php include '/Xampp/htdocs/Project-3/Assets/ContactHeader.php';?>
+<?php include '../../Assets/ContactHeader.php';?>
 <div class="Maintext">
 
     <div class="VGVSubPagina">
@@ -97,6 +97,6 @@
 </div>
 
 </div>
-<?php include '/Xampp/htdocs/Project-3/Assets/ContactFooter.php';?>
+<?php include '../../Assets/ContactFooter.php';?>
 </body>
 </html>

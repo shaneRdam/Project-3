@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-<?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
-<?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+<?php require '../DatabasePuller.php'; ?>
+<?php include '../Navigatie.php';?>
 <?php
 $PriceSlider = isset($_POST["PriceSlider"]) ? floatval($_POST["PriceSlider"]) : 50;
 $ZoekProductText = isset($_POST["ZoekProductText"]) ? $_POST["ZoekProductText"] : "";
@@ -156,7 +156,7 @@ function GetResultaten() {
         </div>
 
 
-        <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
+        <?php include '../Footer.php';?>
 </body>
 <script src="/Project-3/WinkelPagina/ZoekProductPaginaApp.js"></script>
 <script>SliderTextChange()</script>

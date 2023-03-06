@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-<?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
-<?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+<?php require '../../DatabasePuller.php'; ?>
+<?php include '../../Assets/Navigatie.php';?>
 
 <div class="ProductDiv">
 <main class="ProductGradient three">
@@ -54,7 +54,7 @@
         <p>
         $Product_Beschrijving[$i]
         </p>
-        "; echo include '/Xampp/htdocs/Project-3/Assets/ToevoegenWinkelwagenButton.php';
+        "; echo include '../../Assets/ToevoegenWinkelwagenButton.php';
         $ID = $Product_ID[$i]; echo"
     </div>
     <div>
@@ -75,6 +75,6 @@
         </div>
 
 
-        <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
+        <?php include '../../Assets/Footer.php';?>
 </body>
 </html>

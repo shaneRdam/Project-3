@@ -11,8 +11,8 @@
     <title>Document</title>
 </head>
 <body>
-<?php require '/Xampp/htdocs/Project-3/DatabasePuller.php'; ?>
-<?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+<?php require '../DatabasePuller.php'; ?>
+<?php include '../../Assets/Navigatie.php';?>
 <?php 
     $CurrentID = 4;
 echo "
@@ -98,7 +98,7 @@ echo "
 <br><br>
 </p>
 
-<?php include '/Xampp/htdocs/Project-3/Assets/ReviewTabel.php' ?>
+<?php include '../../Assets/ReviewTabel.php' ?>
 <?php 
     function SterrenBerekenen() {
       $TotalSterren = 0;
@@ -127,7 +127,7 @@ echo "
         </div>
 
 
-        <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
+        <?php include '../../Assets/Footer.php';?>
 </body>
 <script>
   Aantal = 1;

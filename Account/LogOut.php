@@ -3,7 +3,7 @@
   unset($_SESSION['account_id']);
   session_destroy();
 
-  header('Location: /Project-3/Account/Login.php');
+  header('Location: ../Account/Login.php');
 ?>
 
 <div class="wrapper">

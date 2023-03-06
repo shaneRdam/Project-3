@@ -1,5 +1,5 @@
 <?php
-include '/Xampp/htdocs/Project-3/DatabasePuller.php';
+include '../DatabasePuller.php';
 
 $servername = "localhost";
 $username = "root";

@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php include '/Xampp/htdocs/Project-3/Assets/Navigatie.php';?>
+<?php include '../../Assets/Navigatie.php';?>
 
 <div class="DuurzaamheidHeaderContainer">
 <div class="DuurzaamheidHeader">
@@ -192,7 +192,7 @@ De weg vooruit is niet altijd recht. Bij air up® willen we de juiste weg bewand
         </div>
 
 
-        <?php include '/Xampp/htdocs/Project-3/Assets/Footer.php';?>
+        <?php include '../../Assets/Footer.php';?>
 </body>
 <script src="/Project-3/App.js"></script>
 </html>
